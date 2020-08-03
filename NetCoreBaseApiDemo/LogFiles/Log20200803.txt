@@ -1,0 +1,12 @@
+2020-08-03 16:09:55.290 +08:00 [INF] 程序启动
+2020-08-03 16:09:55.507 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-03 16:09:55.511 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-03 16:09:55.512 +08:00 [INF] Hosting environment: Development
+2020-08-03 16:09:55.512 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-03 16:09:55.946 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-08-03 16:09:55.996 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-03 16:09:56.039 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-03 16:09:56.048 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-03 16:09:56.070 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 20.9553ms
+2020-08-03 16:09:56.077 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-03 16:09:56.082 +08:00 [INF] Request finished in 162.373ms 200 application/json; charset=utf-8
