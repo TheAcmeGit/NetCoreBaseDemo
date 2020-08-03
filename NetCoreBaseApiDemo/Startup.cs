@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -51,6 +52,14 @@ namespace NetCoreBaseApiDemo
             {
                 endpoints.MapControllers();
             });
+        }
+
+
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            // 在这里添加服务注册
+           // builder.RegisterType<TopicService>();
         }
     }
 }
