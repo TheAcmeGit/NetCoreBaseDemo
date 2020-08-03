@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreBaseApiDemo", "NetCoreBaseApiDemo\NetCoreBaseApiDemo.csproj", "{C547D0A6-E800-4150-80AE-455CEE7A1EA1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2EA03097-62DB-4E13-BDA0-3089C4900FF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreBaseDemo.Core", "NetCoreBaseDemo.Core\NetCoreBaseDemo.Core.csproj", "{C6DAA0C2-5B84-4FBE-97B5-D5DC20057352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{C547D0A6-E800-4150-80AE-455CEE7A1EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C547D0A6-E800-4150-80AE-455CEE7A1EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C547D0A6-E800-4150-80AE-455CEE7A1EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DAA0C2-5B84-4FBE-97B5-D5DC20057352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DAA0C2-5B84-4FBE-97B5-D5DC20057352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DAA0C2-5B84-4FBE-97B5-D5DC20057352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DAA0C2-5B84-4FBE-97B5-D5DC20057352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C6DAA0C2-5B84-4FBE-97B5-D5DC20057352} = {2EA03097-62DB-4E13-BDA0-3089C4900FF4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E77DC44-4CE5-495B-8762-1B2CC83D4A60}

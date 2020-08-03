@@ -10,3 +10,51 @@
 2020-08-03 16:09:56.070 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 20.9553ms
 2020-08-03 16:09:56.077 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
 2020-08-03 16:09:56.082 +08:00 [INF] Request finished in 162.373ms 200 application/json; charset=utf-8
+2020-08-03 17:25:14.418 +08:00 [INF] 程序启动
+2020-08-03 17:25:17.048 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-03 17:25:17.061 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-03 17:25:17.063 +08:00 [INF] Hosting environment: Development
+2020-08-03 17:25:17.063 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-03 17:25:20.474 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-08-03 17:25:20.632 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-03 17:25:21.078 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-03 17:25:21.095 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-03 17:25:21.176 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 93.2257ms
+2020-08-03 17:25:21.221 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-03 17:25:21.223 +08:00 [INF] Request finished in 751.7118ms 200 application/json; charset=utf-8
+2020-08-03 17:25:23.939 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-08-03 17:25:23.940 +08:00 [INF] Request finished in 1.6752ms 404 
+2020-08-03 17:25:49.546 +08:00 [INF] 程序启动
+2020-08-03 17:26:10.906 +08:00 [INF] 程序启动
+2020-08-03 17:26:37.860 +08:00 [INF] 程序启动
+2020-08-03 17:27:25.348 +08:00 [INF] 程序启动
+2020-08-03 17:28:58.521 +08:00 [INF] 程序启动
+2020-08-03 17:30:23.449 +08:00 [INF] 程序启动
+2020-08-03 17:32:08.991 +08:00 [INF] 程序启动
+2020-08-03 17:32:10.090 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-03 17:32:10.095 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-03 17:32:10.096 +08:00 [INF] Hosting environment: Development
+2020-08-03 17:32:10.096 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-03 17:32:13.901 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/weatherforecast  
+2020-08-03 17:32:15.014 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-03 17:32:15.124 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-03 17:32:15.130 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-03 17:32:15.195 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 64.7068ms
+2020-08-03 17:32:15.198 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-03 17:32:15.199 +08:00 [INF] Request finished in 1301.1188ms 200 application/json; charset=utf-8
+2020-08-03 17:32:21.598 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-08-03 17:32:21.599 +08:00 [INF] Request finished in 2.0305ms 301 
+2020-08-03 17:32:21.699 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-03 17:32:21.835 +08:00 [INF] Request finished in 136.0669ms 200 text/html;charset=utf-8
+2020-08-03 17:32:22.265 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger-ui-standalone-preset.js  
+2020-08-03 17:32:22.265 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger-ui-bundle.js  
+2020-08-03 17:32:22.289 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger-ui.css  
+2020-08-03 17:32:22.410 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-08-03 17:32:22.431 +08:00 [INF] Request finished in 141.2891ms 200 text/css
+2020-08-03 17:32:22.571 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-08-03 17:32:22.572 +08:00 [INF] Request finished in 307.7126ms 200 application/javascript
+2020-08-03 17:32:22.834 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-08-03 17:32:22.836 +08:00 [INF] Request finished in 571.9991ms 200 application/javascript
+2020-08-03 17:32:23.411 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-03 17:32:23.889 +08:00 [INF] Request finished in 478.7551ms 200 application/json;charset=utf-8
+2020-08-03 17:32:30.367 +08:00 [INF] Application is shutting down...
