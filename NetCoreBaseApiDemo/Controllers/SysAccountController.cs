@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using NetCoreBaseDemo.Core.IServices;
 using NetCoreBaseDemo.DBEntity;
 using NetCoreBaseDemo.IRepository;
 
@@ -17,16 +18,33 @@ namespace NetCoreBaseApiDemo.Controllers
 
         private readonly ILogger<SysAccountController> _logger;
         private readonly ISysAccountRepository _repository;
+        private readonly IRedisMangerService _redisManger;
 
-        public SysAccountController(ILogger<SysAccountController> logger, ISysAccountRepository repository)
+        public SysAccountController(ILogger<SysAccountController> logger, ISysAccountRepository repository, IRedisMangerService redisManger)
         {
             _logger = logger;
             _repository = repository;
+            _redisManger = redisManger;
         }
         [HttpGet]
         public IEnumerable<SysAccount> Get()
         {
-            return _repository.GetAll();
+
+            if (!_redisManger.Get("list"))
+            {
+                var data = _repository.GetAll();
+                _redisManger.Set("list", data, TimeSpan.FromSeconds(300));
+                return data;
+            }
+            else
+            {
+                var data = _redisManger.Get<IEnumerable<SysAccount>>("list");
+                return data;
+            }
+     
+           
+
+          
         }
 
         [HttpPost]

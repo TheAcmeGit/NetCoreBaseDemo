@@ -11,7 +11,7 @@ namespace NetCoreBaseDemo.Core.Services
 
         private readonly IConnectionMultiplexer _redisConnection;
 
-        public RedisCacheManager(IConnectionMultiplexer redisConnection)
+        public RedisManagerService(IConnectionMultiplexer redisConnection)
         {
             _redisConnection = redisConnection;
             //string redisConfiguration = Appsettings.app(new string[] { "AppSettings", "RedisCachingAOP", "ConnectionString" });//获取连接字符串
