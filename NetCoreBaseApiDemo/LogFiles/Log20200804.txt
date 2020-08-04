@@ -348,3 +348,228 @@ System.InvalidCastException: Unable to cast object of type 'System.Guid' to type
 2020-08-04 10:27:55.882 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
 2020-08-04 10:27:55.883 +08:00 [INF] Request finished in 122.171ms 200 application/json; charset=utf-8
 2020-08-04 10:31:26.934 +08:00 [INF] Application is shutting down...
+2020-08-04 11:04:56.084 +08:00 [INF] 程序启动
+2020-08-04 11:05:00.095 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-04 11:05:00.100 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-04 11:05:00.100 +08:00 [INF] Hosting environment: Development
+2020-08-04 11:05:00.100 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-04 11:05:01.217 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 11:05:01.703 +08:00 [INF] Request finished in 487.9006ms 200 text/html;charset=utf-8
+2020-08-04 11:05:02.124 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-04 11:05:02.348 +08:00 [INF] Request finished in 225.1686ms 200 application/json;charset=utf-8
+2020-08-04 11:05:13.971 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 11:05:14.159 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:05:14.358 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:05:14.942 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:05:15.532 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 581.81ms.
+2020-08-04 11:05:15.538 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 11:05:15.582 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 1215.2681ms
+2020-08-04 11:05:15.583 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:05:15.624 +08:00 [INF] Request finished in 1652.987ms 200 application/json; charset=utf-8
+2020-08-04 11:05:24.040 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler  
+2020-08-04 11:05:24.045 +08:00 [INF] Request finished in 4.7817ms 404 text/plain
+2020-08-04 11:05:24.104 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2020-08-04 11:05:24.148 +08:00 [INF] Request finished in 44.0936ms 404 
+2020-08-04 11:05:44.991 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:05:45.331 +08:00 [INF] Request finished in 339.9013ms 200 text/html; charset=utf-8
+2020-08-04 11:05:45.349 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/includes.min.js?v=4.2.1+b27bea37e9  
+2020-08-04 11:05:45.425 +08:00 [INF] Request finished in 76.2792ms 200 application/javascript
+2020-08-04 11:05:45.534 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/includes.min.css?v=4.2.1+b27bea37e9  
+2020-08-04 11:05:45.536 +08:00 [INF] Request finished in 1.2464ms 200 text/css
+2020-08-04 11:06:27.556 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 11:06:27.562 +08:00 [INF] Request finished in 6.1661ms 200 text/html;charset=utf-8
+2020-08-04 11:06:27.739 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-04 11:06:27.749 +08:00 [INF] Request finished in 10.0829ms 200 application/json;charset=utf-8
+2020-08-04 11:06:31.046 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:06:31.048 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:06:31.051 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:06:31.053 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:06:31.234 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 180.0634ms.
+2020-08-04 11:06:31.236 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:06:31.237 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 184.17ms
+2020-08-04 11:06:31.237 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:06:31.239 +08:00 [INF] Request finished in 193.0749ms 200 application/json; charset=utf-8
+2020-08-04 11:06:33.588 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:06:33.593 +08:00 [INF] Request finished in 4.3535ms 200 text/html; charset=utf-8
+2020-08-04 11:06:52.444 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:06:52.446 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:06:52.448 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:06:52.450 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:06:52.484 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 32.8709ms.
+2020-08-04 11:06:52.486 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:06:52.487 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 37.3267ms
+2020-08-04 11:06:52.488 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:06:52.489 +08:00 [INF] Request finished in 45.5611ms 200 application/json; charset=utf-8
+2020-08-04 11:06:55.526 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:06:55.531 +08:00 [INF] Request finished in 5.4694ms 200 text/html; charset=utf-8
+2020-08-04 11:07:00.026 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 11:07:00.029 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:07:00.030 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:07:00.034 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:07:00.038 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.7754ms.
+2020-08-04 11:07:00.041 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 11:07:00.043 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 9.6775ms
+2020-08-04 11:07:00.082 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:07:00.083 +08:00 [INF] Request finished in 56.4637ms 200 application/json; charset=utf-8
+2020-08-04 11:07:02.869 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:07:02.872 +08:00 [INF] Request finished in 2.7404ms 200 text/html; charset=utf-8
+2020-08-04 11:07:15.086 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 11:07:15.090 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:07:15.091 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:07:15.093 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:07:15.096 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2687ms.
+2020-08-04 11:07:15.099 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 11:07:15.102 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 8.7968ms
+2020-08-04 11:07:15.102 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:07:15.105 +08:00 [INF] Request finished in 18.5952ms 200 application/json; charset=utf-8
+2020-08-04 11:07:17.853 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:07:17.856 +08:00 [INF] Request finished in 2.6232ms 200 text/html; charset=utf-8
+2020-08-04 11:07:39.937 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 11:07:39.939 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:07:39.941 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:07:39.943 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:07:39.945 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0862ms.
+2020-08-04 11:07:39.947 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 11:07:39.951 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 8.9801ms
+2020-08-04 11:07:39.952 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:07:39.954 +08:00 [INF] Request finished in 17.3704ms 200 application/json; charset=utf-8
+2020-08-04 11:07:42.069 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:07:42.071 +08:00 [INF] Request finished in 1.9857ms 200 text/html; charset=utf-8
+2020-08-04 11:07:58.587 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:07:58.589 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:07:58.591 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:07:58.592 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:07:58.642 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 48.1264ms.
+2020-08-04 11:07:58.643 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:07:58.644 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 52.2302ms
+2020-08-04 11:07:58.645 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:07:58.647 +08:00 [INF] Request finished in 59.419ms 200 application/json; charset=utf-8
+2020-08-04 11:08:01.311 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:08:01.312 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:08:01.313 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:08:01.315 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:08:01.358 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 42.6157ms.
+2020-08-04 11:08:01.360 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:08:01.360 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 46.0529ms
+2020-08-04 11:08:01.362 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:08:01.363 +08:00 [INF] Request finished in 52.16ms 200 application/json; charset=utf-8
+2020-08-04 11:08:04.312 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:08:04.314 +08:00 [INF] Request finished in 2.3569ms 200 text/html; charset=utf-8
+2020-08-04 11:08:10.473 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:08:10.477 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:08:10.478 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:08:10.480 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:08:10.525 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 43.4747ms.
+2020-08-04 11:08:10.527 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:08:10.528 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 48.2807ms
+2020-08-04 11:08:10.529 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:08:10.530 +08:00 [INF] Request finished in 57.2768ms 200 application/json; charset=utf-8
+2020-08-04 11:08:14.938 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 11:08:14.940 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:08:14.941 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:08:14.943 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:08:14.946 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.4813ms.
+2020-08-04 11:08:14.949 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 11:08:14.952 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 8.6286ms
+2020-08-04 11:08:14.953 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:08:14.955 +08:00 [INF] Request finished in 17.5905ms 200 application/json; charset=utf-8
+2020-08-04 11:09:28.630 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:09:28.632 +08:00 [INF] Request finished in 2.5944ms 200 text/html; charset=utf-8
+2020-08-04 11:09:38.039 +08:00 [INF] Application is shutting down...
+2020-08-04 11:09:40.106 +08:00 [INF] 程序启动
+2020-08-04 11:09:40.462 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-04 11:09:40.465 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-04 11:09:40.466 +08:00 [INF] Hosting environment: Development
+2020-08-04 11:09:40.466 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-04 11:09:40.776 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 11:09:40.890 +08:00 [INF] Request finished in 117.7214ms 200 text/html;charset=utf-8
+2020-08-04 11:09:41.006 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-04 11:09:41.129 +08:00 [INF] Request finished in 123.4562ms 200 application/json;charset=utf-8
+2020-08-04 11:09:51.452 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:09:51.472 +08:00 [INF] Request finished in 19.2829ms 404 text/plain
+2020-08-04 11:09:56.365 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:09:56.371 +08:00 [INF] Request finished in 6.3252ms 404 text/plain
+2020-08-04 11:10:01.772 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:10:01.799 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:10:01.831 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:10:01.976 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:10:02.263 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 279.7409ms.
+2020-08-04 11:10:02.269 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:10:02.278 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 441.2484ms
+2020-08-04 11:10:02.280 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:10:02.289 +08:00 [INF] Request finished in 517.5755ms 200 application/json; charset=utf-8
+2020-08-04 11:10:04.640 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:10:04.759 +08:00 [INF] Request finished in 119.1244ms 200 text/html; charset=utf-8
+2020-08-04 11:10:17.734 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:10:17.736 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:10:17.737 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:10:17.740 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:10:17.789 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 48.1703ms.
+2020-08-04 11:10:17.791 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:10:17.792 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 52.5036ms
+2020-08-04 11:10:17.793 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:10:17.794 +08:00 [INF] Request finished in 60.753ms 200 application/json; charset=utf-8
+2020-08-04 11:10:20.208 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:10:20.214 +08:00 [INF] Request finished in 5.4049ms 200 text/html; charset=utf-8
+2020-08-04 11:10:28.710 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:10:28.713 +08:00 [INF] Request finished in 3.393ms 200 text/html; charset=utf-8
+2020-08-04 11:10:29.309 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:10:29.311 +08:00 [INF] Request finished in 2.1721ms 200 text/html; charset=utf-8
+2020-08-04 11:12:19.958 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast  
+2020-08-04 11:12:19.961 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:12:19.966 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-04 11:12:19.971 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:12:19.974 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.3094ms.
+2020-08-04 11:12:19.976 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-04 11:12:19.980 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 12.1761ms
+2020-08-04 11:12:19.982 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:12:19.983 +08:00 [INF] Request finished in 25.5221ms 200 application/json; charset=utf-8
+2020-08-04 11:12:23.445 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:12:23.448 +08:00 [INF] Request finished in 2.8504ms 200 text/html; charset=utf-8
+2020-08-04 11:19:23.949 +08:00 [INF] 程序启动
+2020-08-04 11:19:24.310 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-04 11:19:24.314 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-04 11:19:24.314 +08:00 [INF] Hosting environment: Development
+2020-08-04 11:19:24.315 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-04 11:19:24.948 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 11:19:25.083 +08:00 [INF] Request finished in 140.5111ms 200 text/html;charset=utf-8
+2020-08-04 11:19:25.196 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-04 11:19:25.303 +08:00 [INF] Request finished in 107.4993ms 200 application/json;charset=utf-8
+2020-08-04 11:19:31.959 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 11:19:31.963 +08:00 [INF] Request finished in 4.5074ms 200 text/html;charset=utf-8
+2020-08-04 11:19:36.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:19:36.553 +08:00 [INF] Request finished in 18.6611ms 404 text/plain
+2020-08-04 11:19:40.475 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 11:19:40.500 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:19:40.560 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:19:40.665 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:19:40.834 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 161.4276ms.
+2020-08-04 11:19:40.841 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 11:19:40.853 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 286.8146ms
+2020-08-04 11:19:40.855 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:19:40.869 +08:00 [INF] Request finished in 394.3716ms 200 application/json; charset=utf-8
+2020-08-04 11:19:42.821 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:19:42.941 +08:00 [INF] Request finished in 119.5783ms 200 text/html; charset=utf-8
+2020-08-04 11:19:45.537 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 11:19:45.541 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:19:45.542 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:19:45.547 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:19:45.555 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.0475ms.
+2020-08-04 11:19:45.558 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 11:19:45.560 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 16.2859ms
+2020-08-04 11:19:45.561 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 11:19:45.563 +08:00 [INF] Request finished in 26.8116ms 200 application/json; charset=utf-8
+2020-08-04 11:19:47.422 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:19:47.425 +08:00 [INF] Request finished in 3.8642ms 200 text/html; charset=utf-8
+2020-08-04 11:19:52.842 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount  0
+2020-08-04 11:19:52.844 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:19:52.850 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature System.Guid Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 11:19:52.853 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 11:19:52.941 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 86.3741ms.
+2020-08-04 11:19:52.970 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-08-04 11:19:52.972 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 120.1952ms
+2020-08-04 11:19:52.974 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-04 11:19:52.975 +08:00 [INF] Request finished in 133.806ms 200 application/json; charset=utf-8
+2020-08-04 11:19:55.327 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 11:19:55.331 +08:00 [INF] Request finished in 4.043ms 200 text/html; charset=utf-8
+2020-08-04 11:20:15.611 +08:00 [INF] Application is shutting down...

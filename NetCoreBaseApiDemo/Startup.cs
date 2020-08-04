@@ -35,6 +35,9 @@ namespace NetCoreBaseApiDemo
             var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
             services.AddSwagger(xmlPath);
             services.AddDapper(Configuration.GetConnectionString("DefaultConnection"));
+
+
+            services.AddMiniProfiler_Cus();
             services.AddControllers();
         }
 
@@ -48,6 +51,8 @@ namespace NetCoreBaseApiDemo
 
             app.UseRouting();
             app.UseSwagger_Cus();
+            app.UseMiniProfiler_Cus();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

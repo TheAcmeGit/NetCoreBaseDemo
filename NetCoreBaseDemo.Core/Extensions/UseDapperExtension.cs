@@ -14,8 +14,9 @@ namespace NetCoreBaseDemo.Core.Extensions
     {
         public static IServiceCollection AddDapper(this IServiceCollection services, string connectionString)
         {
-            services.AddSingleton<IDbConnection>((sp) =>
+            services.AddScoped<IDbConnection>((sp) =>
             {
+                //采用MiniProfiler 用于性能分析
                 var client =  new ProfiledDbConnection(new SqlConnection(connectionString), MiniProfiler.Current);
                 client.Open();
                 return client;
