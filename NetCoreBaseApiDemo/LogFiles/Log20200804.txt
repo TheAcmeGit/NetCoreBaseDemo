@@ -573,3 +573,61 @@ System.InvalidCastException: Unable to cast object of type 'System.Guid' to type
 2020-08-04 11:19:55.327 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
 2020-08-04 11:19:55.331 +08:00 [INF] Request finished in 4.043ms 200 text/html; charset=utf-8
 2020-08-04 11:20:15.611 +08:00 [INF] Application is shutting down...
+2020-08-04 14:37:39.095 +08:00 [INF] 程序启动
+2020-08-04 14:37:40.149 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-04 14:37:40.153 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-04 14:37:40.153 +08:00 [INF] Hosting environment: Development
+2020-08-04 14:37:40.154 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-04 14:37:40.787 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 14:37:40.906 +08:00 [INF] Request finished in 128.1844ms 200 text/html;charset=utf-8
+2020-08-04 14:37:41.775 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-04 14:37:41.888 +08:00 [INF] Request finished in 112.6309ms 200 application/json;charset=utf-8
+2020-08-04 14:37:45.544 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 14:37:45.680 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 14:37:45.854 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 14:37:46.265 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 14:37:46.740 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 466.9641ms.
+2020-08-04 14:37:46.747 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 14:37:46.786 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 924.6345ms
+2020-08-04 14:37:46.787 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 14:37:46.822 +08:00 [INF] Request finished in 1277.8535ms 200 application/json; charset=utf-8
+2020-08-04 14:39:02.805 +08:00 [INF] 程序启动
+2020-08-04 14:39:03.210 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-04 14:39:03.215 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-04 14:39:03.215 +08:00 [INF] Hosting environment: Development
+2020-08-04 14:39:03.216 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-04 14:39:03.737 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 14:39:03.855 +08:00 [INF] Request finished in 125.6062ms 200 text/html;charset=utf-8
+2020-08-04 14:39:04.005 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-04 14:39:04.105 +08:00 [INF] Request finished in 100.2474ms 200 application/json;charset=utf-8
+2020-08-04 14:39:06.943 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 14:39:06.970 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 14:39:07.008 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 14:39:07.142 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 14:39:07.315 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 162.4312ms.
+2020-08-04 14:39:07.320 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 14:39:07.334 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 318.5157ms
+2020-08-04 14:39:07.335 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 14:39:07.352 +08:00 [INF] Request finished in 409.348ms 200 application/json; charset=utf-8
+2020-08-04 14:39:21.316 +08:00 [INF] Application is shutting down...
+2020-08-04 14:39:43.740 +08:00 [INF] 程序启动
+2020-08-04 14:39:44.161 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-04 14:39:44.165 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-04 14:39:44.165 +08:00 [INF] Hosting environment: Development
+2020-08-04 14:39:44.166 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-04 14:39:44.899 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-04 14:39:45.000 +08:00 [INF] Request finished in 103.734ms 200 text/html;charset=utf-8
+2020-08-04 14:39:45.146 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-04 14:39:45.246 +08:00 [INF] Request finished in 100.3281ms 200 application/json;charset=utf-8
+2020-08-04 14:39:48.295 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount  
+2020-08-04 14:39:48.322 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 14:39:48.353 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.SysAccount] Get() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-04 14:39:48.928 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-04 14:39:49.092 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 155.9619ms.
+2020-08-04 14:39:49.099 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.SysAccount, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-04 14:39:49.112 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 752.205ms
+2020-08-04 14:39:49.113 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-04 14:39:49.127 +08:00 [INF] Request finished in 832.5595ms 200 application/json; charset=utf-8
+2020-08-04 14:40:01.975 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/profiler/results  
+2020-08-04 14:40:02.441 +08:00 [INF] Request finished in 465.9027ms 200 text/html; charset=utf-8
+2020-08-04 14:59:18.311 +08:00 [INF] Application is shutting down...

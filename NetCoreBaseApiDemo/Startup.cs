@@ -36,7 +36,7 @@ namespace NetCoreBaseApiDemo
             services.AddSwagger(xmlPath);
             services.AddDapper(Configuration.GetConnectionString("DefaultConnection"));
 
-
+            services.AddRedis_Cus();
             services.AddMiniProfiler_Cus();
             services.AddControllers();
         }
@@ -65,8 +65,9 @@ namespace NetCoreBaseApiDemo
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
+            builder.AopRegister();
 
-            builder.RegisterType<SysAccountRepository>().As<ISysAccountRepository>(); 
+            //builder.RegisterType<SysAccountRepository>().As<ISysAccountRepository>().InstancePerLifetimeScope(); 
             // 在这里添加服务注册
             // builder.RegisterType<TopicService>();
         }

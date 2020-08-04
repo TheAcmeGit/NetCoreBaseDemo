@@ -17,13 +17,13 @@ namespace NetCoreBaseDemo.Core.Extensions
             services.AddScoped<IDbConnection>((sp) =>
             {
                 //采用MiniProfiler 用于性能分析
-                var client =  new ProfiledDbConnection(new SqlConnection(connectionString), MiniProfiler.Current);
+                var client = new ProfiledDbConnection(new SqlConnection(connectionString), MiniProfiler.Current);
                 client.Open();
                 return client;
             });
             return services;
         }
 
-        
+
     }
 }
