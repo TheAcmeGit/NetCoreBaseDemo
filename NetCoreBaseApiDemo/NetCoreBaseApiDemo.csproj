@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NetCoreBaseDemo.Core\NetCoreBaseDemo.Core.csproj" />
+    <ProjectReference Include="..\NetCoreBaseDemo.Dapper.Repository\NetCoreBaseDemo.Dapper.Repository.csproj" />
   </ItemGroup>
 
 

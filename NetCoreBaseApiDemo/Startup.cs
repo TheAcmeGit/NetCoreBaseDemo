@@ -13,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NetCoreBaseDemo.Core.Extensions;
+using NetCoreBaseDemo.Dapper.Repository;
+using NetCoreBaseDemo.IRepository;
 
 namespace NetCoreBaseApiDemo
 {
@@ -31,8 +33,8 @@ namespace NetCoreBaseApiDemo
 
             var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
             var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-            services.AddDapper(Configuration.GetConnectionString("DefaultConnection"));
             services.AddSwagger(xmlPath);
+            services.AddDapper(Configuration.GetConnectionString("DefaultConnection"));
             services.AddControllers();
         }
 
@@ -58,8 +60,10 @@ namespace NetCoreBaseApiDemo
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
+
+            builder.RegisterType<SysAccountRepository>().As<ISysAccountRepository>(); 
             // 在这里添加服务注册
-           // builder.RegisterType<TopicService>();
+            // builder.RegisterType<TopicService>();
         }
     }
 }

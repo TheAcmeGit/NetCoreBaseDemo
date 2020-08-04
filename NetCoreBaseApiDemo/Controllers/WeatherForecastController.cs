@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using NetCoreBaseDemo.DBEntity;
+using NetCoreBaseDemo.IRepository;
 
 namespace NetCoreBaseApiDemo.Controllers
 {
@@ -17,12 +19,20 @@ namespace NetCoreBaseApiDemo.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ISysAccountRepository repository;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, ISysAccountRepository repository)
         {
             _logger = logger;
+            this.repository = repository;
         }
 
+        [HttpPost]
+        public IEnumerable<SysAccount> Post()
+        {
+          return  repository.GetAll();
+            
+        } 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
