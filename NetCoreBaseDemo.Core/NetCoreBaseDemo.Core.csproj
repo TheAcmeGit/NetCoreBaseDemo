@@ -7,6 +7,8 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="5.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
     <PackageReference Include="Castle.Core" Version="4.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
@@ -21,6 +23,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NetCoreBaseDemo.Dapper.Repository\NetCoreBaseDemo.Dapper.Repository.csproj" />
+    <ProjectReference Include="..\NetCoreBaseDemo.DTOEntity\NetCoreBaseDemo.DTOEntity.csproj" />
+    <ProjectReference Include="..\NetCoreBaseDemo.Service\NetCoreBaseDemo.Service.csproj" />
   </ItemGroup>
 
 </Project>

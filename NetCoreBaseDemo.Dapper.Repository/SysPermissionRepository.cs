@@ -10,9 +10,11 @@ namespace NetCoreBaseDemo.Dapper.Repository
 {
     public class SysPermissionRepository : BaseRepository<string, SysPermission>, ISysPermissionRepository
     {
-        // protected IDbConnection _dbConnection;
-        public SysPermissionRepository(IDbConnection dbConnection) : base(dbConnection)
+        protected IDbConnection _dbConnection;
+        public SysPermissionRepository(IDbConnection dbConnection)
         {
+            _dbConnection = dbConnection;
+            base._dbBaseConnection = dbConnection;
         }
 
 

@@ -2,7 +2,7 @@
 
 namespace NetCoreBaseDemo.DTOEntity
 {
-    public class Class1
+    public class SysAccountDto
     {
     }
 }

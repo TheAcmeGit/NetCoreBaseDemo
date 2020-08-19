@@ -194,3 +194,592 @@ System.NotSupportedException: Conflicting method/path combination "GET api/ApiTo
 2020-08-19 09:34:43.271 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
 2020-08-19 09:34:43.274 +08:00 [INF] Request finished in 199.0059ms 200 application/json; charset=utf-8
 2020-08-19 09:41:46.699 +08:00 [INF] Application is shutting down...
+2020-08-19 11:08:50.936 +08:00 [INF] 程序启动
+2020-08-19 11:08:52.645 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:08:53.599 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:08:53.600 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:08:53.600 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:08:53.600 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:08:54.321 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:08:55.181 +08:00 [INF] Request finished in 861.1296ms 200 text/html;charset=utf-8
+2020-08-19 11:08:55.580 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:08:55.753 +08:00 [INF] Request finished in 173.2471ms 200 application/json;charset=utf-8
+2020-08-19 11:09:07.607 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 241
+2020-08-19 11:09:07.733 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:09:07.735 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:09:08.328 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:09:08.437 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:09:08.500 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 45.3847ms
+2020-08-19 11:09:08.516 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:09:08.528 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating NetCoreBaseDemo.Service.SysAccountService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'NetCoreBaseDemo.Service.SysAccountService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'AutoMapper.IMapper mapper' of constructor 'Void .ctor(NetCoreBaseDemo.IRepository.ISysAccountRepository, AutoMapper.IMapper)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.<Execute>b__8_0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 11:09:08.918 +08:00 [INF] Request finished in 1311.3283ms 500 text/plain
+2020-08-19 11:09:54.409 +08:00 [INF] Application is shutting down...
+2020-08-19 11:09:57.041 +08:00 [INF] 程序启动
+2020-08-19 11:09:57.300 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:09:57.458 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:09:57.459 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:09:57.459 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:09:57.459 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:09:58.059 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:09:58.779 +08:00 [INF] Request finished in 723.3114ms 200 text/html;charset=utf-8
+2020-08-19 11:09:58.943 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:09:59.093 +08:00 [INF] Request finished in 150.5341ms 200 application/json;charset=utf-8
+2020-08-19 11:10:05.155 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 241
+2020-08-19 11:10:05.180 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:10:05.181 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:10:05.206 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:10:05.240 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:10:05.249 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 4.4798ms
+2020-08-19 11:10:05.252 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:10:05.254 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating NetCoreBaseDemo.Service.SysAccountService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'NetCoreBaseDemo.Service.SysAccountService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'AutoMapper.IMapper mapper' of constructor 'Void .ctor(NetCoreBaseDemo.IRepository.ISysAccountRepository, AutoMapper.IMapper)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.<Execute>b__8_0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 11:10:05.292 +08:00 [INF] Request finished in 137.6115ms 500 text/plain
+2020-08-19 11:10:26.798 +08:00 [INF] Application is shutting down...
+2020-08-19 11:11:36.523 +08:00 [INF] 程序启动
+2020-08-19 11:11:50.225 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:11:51.372 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:11:51.373 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:11:51.374 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:11:51.374 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:11:54.992 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:11:55.407 +08:00 [INF] Request finished in 418.1578ms 200 text/html;charset=utf-8
+2020-08-19 11:11:55.807 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:11:56.122 +08:00 [INF] Request finished in 314.9106ms 200 application/json;charset=utf-8
+2020-08-19 11:12:03.212 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 241
+2020-08-19 11:12:03.295 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:12:03.297 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:12:03.750 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:12:03.838 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:12:03.920 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 75.3881ms
+2020-08-19 11:12:03.930 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:12:03.932 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating NetCoreBaseDemo.Service.SysAccountService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'NetCoreBaseDemo.Service.SysAccountService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'AutoMapper.IMapper mapper' of constructor 'Void .ctor(NetCoreBaseDemo.IRepository.ISysAccountRepository, AutoMapper.IMapper)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.<Execute>b__8_0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 11:12:04.515 +08:00 [INF] Request finished in 1303.2225ms 500 text/plain
+2020-08-19 11:12:15.192 +08:00 [INF] Application is shutting down...
+2020-08-19 11:12:23.015 +08:00 [INF] 程序启动
+2020-08-19 11:12:23.432 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:12:23.609 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:12:23.610 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:12:23.611 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:12:23.612 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:12:23.905 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:12:23.995 +08:00 [INF] Request finished in 97.4311ms 200 text/html;charset=utf-8
+2020-08-19 11:12:24.125 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:12:24.246 +08:00 [INF] Request finished in 120.9207ms 200 application/json;charset=utf-8
+2020-08-19 11:12:33.296 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount/id?id=1  
+2020-08-19 11:12:33.342 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 11:12:33.386 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:12:33.395 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 4.252ms
+2020-08-19 11:12:33.399 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 11:12:33.403 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating NetCoreBaseDemo.Service.SysAccountService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'NetCoreBaseDemo.Service.SysAccountService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'AutoMapper.IMapper mapper' of constructor 'Void .ctor(NetCoreBaseDemo.IRepository.ISysAccountRepository, AutoMapper.IMapper)'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.<Execute>b__8_0()
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid id, Func`1 creator)
+   at Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance(Guid primaryId, Nullable`1 qualifyingId, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 11:12:33.439 +08:00 [INF] Request finished in 143.0892ms 500 text/plain
+2020-08-19 11:13:16.390 +08:00 [INF] Application is shutting down...
+2020-08-19 11:14:36.920 +08:00 [INF] 程序启动
+2020-08-19 11:14:37.232 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:14:37.392 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:14:37.392 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:14:37.393 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:14:37.393 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:14:37.901 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:14:38.077 +08:00 [INF] Request finished in 179.4088ms 200 text/html;charset=utf-8
+2020-08-19 11:14:38.226 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:14:38.370 +08:00 [INF] Request finished in 144.2898ms 200 application/json;charset=utf-8
+2020-08-19 11:14:43.815 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount/id?id=11  
+2020-08-19 11:14:43.863 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 11:14:43.896 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:14:45.905 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 11:14:46.543 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 630.5793ms.
+2020-08-19 11:14:46.569 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 2668.4059ms
+2020-08-19 11:14:46.571 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 11:14:46.574 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetCoreBaseDemo.Core.Filters.MyActionFilter.OnActionExecuted(ActionExecutedContext context) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Filters\3.MyActionFilter.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 11:14:46.626 +08:00 [INF] Request finished in 2810.8777ms 500 text/plain
+2020-08-19 11:15:01.617 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 241
+2020-08-19 11:15:01.622 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:15:01.623 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:15:01.626 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:15:01.629 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:15:01.685 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 11:15:01.950 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 319.2399ms
+2020-08-19 11:15:01.952 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:15:01.953 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'Id'，表 'MasterDb.dbo.SysAccounts'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\dotnet\src\MiniProfiler.Shared\Data\ProfiledDbCommand.cs:line 216
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Dapper.SqlMapper.Query(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 648
+   at Dapper.SimpleCRUD.Insert[TKey,TEntity](IDbConnection connection, TEntity entityToInsert, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at NetCoreBaseDemo.Dapper.Repository.BaseRepository`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Dapper.Repository\BaseRepository.cs:line 27
+   at Castle.Proxies.Invocations.IBaseRepository`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountRepositoryProxy.Insert(SysAccount entity)
+   at NetCoreBaseDemo.Service.BaseService`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Service\Base\BaseService.cs:line 19
+   at Castle.Proxies.Invocations.IBaseService`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountServiceProxy.Insert(SysAccount entity)
+   at NetCoreBaseApiDemo.Controllers.SysAccountController.Post(SysAccount entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo\Controllers\SysAccountController.cs:line 62
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:fe5c438f-887c-41d6-b1da-a51d08685d7e
+Error Number:515,State:2,Class:16
+2020-08-19 11:15:02.043 +08:00 [INF] Request finished in 426.5487ms 500 text/plain
+2020-08-19 11:15:20.703 +08:00 [INF] Application is shutting down...
+2020-08-19 11:15:33.629 +08:00 [INF] 程序启动
+2020-08-19 11:15:38.311 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:15:38.955 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:15:38.956 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:15:38.956 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:15:38.956 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:15:39.692 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:15:39.832 +08:00 [INF] Request finished in 143.1739ms 200 text/html;charset=utf-8
+2020-08-19 11:15:39.982 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:15:40.118 +08:00 [INF] Request finished in 135.256ms 200 application/json;charset=utf-8
+2020-08-19 11:15:45.650 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 241
+2020-08-19 11:15:45.688 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:15:45.688 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:15:45.768 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:15:45.818 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:15:47.177 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 11:20:22.040 +08:00 [INF] 程序启动
+2020-08-19 11:20:22.286 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:20:22.449 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:20:22.450 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:20:22.450 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:20:22.451 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:20:23.002 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:20:23.133 +08:00 [INF] Request finished in 138.5857ms 200 text/html;charset=utf-8
+2020-08-19 11:20:23.429 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:20:23.668 +08:00 [INF] Request finished in 239.8843ms 200 application/json;charset=utf-8
+2020-08-19 11:20:27.806 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 246
+2020-08-19 11:20:27.828 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:20:27.829 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:20:27.929 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:20:27.965 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:20:28.921 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 11:20:29.267 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 1297.3083ms
+2020-08-19 11:20:29.269 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:20:29.269 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'Id'，表 'MasterDb.dbo.SysAccounts'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\dotnet\src\MiniProfiler.Shared\Data\ProfiledDbCommand.cs:line 216
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Dapper.SqlMapper.Query(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 648
+   at Dapper.SimpleCRUD.Insert[TKey,TEntity](IDbConnection connection, TEntity entityToInsert, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at NetCoreBaseDemo.Dapper.Repository.BaseRepository`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Dapper.Repository\BaseRepository.cs:line 27
+   at Castle.Proxies.Invocations.IBaseRepository`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountRepositoryProxy.Insert(SysAccount entity)
+   at NetCoreBaseDemo.Service.BaseService`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Service\Base\BaseService.cs:line 19
+   at Castle.Proxies.Invocations.IBaseService`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountServiceProxy.Insert(SysAccount entity)
+   at NetCoreBaseApiDemo.Controllers.SysAccountController.Post(SysAccount entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo\Controllers\SysAccountController.cs:line 63
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:8c02bad4-a803-471f-a5c7-725818cbdd35
+Error Number:515,State:2,Class:16
+2020-08-19 11:20:29.677 +08:00 [INF] Request finished in 1871.8338ms 500 text/plain
+2020-08-19 11:21:12.367 +08:00 [INF] Application is shutting down...
+2020-08-19 11:22:07.874 +08:00 [INF] 程序启动
+2020-08-19 11:22:14.756 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:22:15.478 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:22:15.479 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:22:15.479 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:22:15.480 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:22:18.891 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:22:19.401 +08:00 [INF] Request finished in 514.2855ms 200 text/html;charset=utf-8
+2020-08-19 11:22:19.853 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:22:20.013 +08:00 [INF] Request finished in 159.9642ms 200 application/json;charset=utf-8
+2020-08-19 11:22:24.436 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 246
+2020-08-19 11:22:24.620 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:22:24.621 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:22:24.870 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:22:25.091 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:22:27.414 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 11:23:35.181 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 70084.5396ms
+2020-08-19 11:23:35.193 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:23:35.205 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'Id'，表 'MasterDb.dbo.SysAccounts'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\dotnet\src\MiniProfiler.Shared\Data\ProfiledDbCommand.cs:line 216
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Dapper.SqlMapper.Query(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 648
+   at Dapper.SimpleCRUD.Insert[TKey,TEntity](IDbConnection connection, TEntity entityToInsert, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at NetCoreBaseDemo.Dapper.Repository.BaseRepository`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Dapper.Repository\BaseRepository.cs:line 27
+   at Castle.Proxies.Invocations.IBaseRepository`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountRepositoryProxy.Insert(SysAccount entity)
+   at NetCoreBaseDemo.Service.BaseService`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Service\Base\BaseService.cs:line 19
+   at Castle.Proxies.Invocations.IBaseService`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountServiceProxy.Insert(SysAccount entity)
+   at NetCoreBaseApiDemo.Controllers.SysAccountController.Post(SysAccount entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo\Controllers\SysAccountController.cs:line 63
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:d9afcd98-68ad-4c02-bf17-e764aefb1dff
+Error Number:515,State:2,Class:16
+2020-08-19 11:23:35.754 +08:00 [INF] Request finished in 71318.9457ms 500 text/plain
+2020-08-19 11:23:43.203 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount/id?id=1  
+2020-08-19 11:23:43.209 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 11:23:43.257 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:23:43.299 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 11:23:43.471 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 157.4501ms.
+2020-08-19 11:23:46.895 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 11:23:46.969 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 3710.4455ms
+2020-08-19 11:23:46.971 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 11:23:47.007 +08:00 [INF] Request finished in 3804.2584ms 200 application/json; charset=utf-8
+2020-08-19 11:26:29.825 +08:00 [INF] 程序启动
+2020-08-19 11:26:30.252 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 11:26:30.472 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 11:26:30.473 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 11:26:30.473 +08:00 [INF] Hosting environment: Development
+2020-08-19 11:26:30.474 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 11:26:31.008 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 11:26:31.143 +08:00 [INF] Request finished in 139.3085ms 200 text/html;charset=utf-8
+2020-08-19 11:26:32.206 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 11:26:32.318 +08:00 [INF] Request finished in 112.9185ms 200 application/json;charset=utf-8
+2020-08-19 11:26:40.029 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/SysAccount application/json 276
+2020-08-19 11:26:40.054 +08:00 [INF] CORS policy execution failed.
+2020-08-19 11:26:40.055 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 11:26:40.099 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:26:40.135 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(TheAcme.EntityModule.DbModels.SysAccount) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 11:26:40.659 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 11:26:41.027 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 887.3281ms
+2020-08-19 11:26:41.029 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 11:26:41.031 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_SYSACCOU_REFERENCE_SYSDEPAR"冲突。该冲突发生于数据库"MasterDb"，表"dbo.SysDepartments", column 'Id'。
+语句已终止。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\dotnet\src\MiniProfiler.Shared\Data\ProfiledDbCommand.cs:line 216
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 721
+   at Dapper.SqlMapper.Query(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 648
+   at Dapper.SimpleCRUD.Insert[TKey,TEntity](IDbConnection connection, TEntity entityToInsert, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at NetCoreBaseDemo.Dapper.Repository.BaseRepository`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Dapper.Repository\BaseRepository.cs:line 27
+   at Castle.Proxies.Invocations.IBaseRepository`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountRepositoryProxy.Insert(SysAccount entity)
+   at NetCoreBaseDemo.Service.BaseService`2.Insert(TEntity entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Service\Base\BaseService.cs:line 19
+   at Castle.Proxies.Invocations.IBaseService`2_Insert.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at NetCoreBaseDemo.Core.Aop.SayHelloAop.Intercept(IInvocation invocation) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Aop\SayHelloAop.cs:line 13
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISysAccountServiceProxy.Insert(SysAccount entity)
+   at NetCoreBaseApiDemo.Controllers.SysAccountController.Post(SysAccount entity) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo\Controllers\SysAccountController.cs:line 63
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:b7c148a0-5d4c-4c84-b236-23d060c583c5
+Error Number:547,State:0,Class:16
+2020-08-19 11:26:41.502 +08:00 [INF] Request finished in 1472.8996ms 500 text/plain
+2020-08-19 11:27:10.585 +08:00 [INF] Application is shutting down...

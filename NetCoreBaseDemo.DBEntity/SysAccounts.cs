@@ -9,7 +9,7 @@ namespace TheAcme.EntityModule.DbModels
    public class SysAccount
     {
         [ExplicitKey]
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
         public string RealNmae { get; set; }

@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NetCoreBaseDemo.Core.IServices;
 using NetCoreBaseDemo.DBEntity;
+using NetCoreBaseDemo.DTOEntity;
 using NetCoreBaseDemo.IRepository;
+using NetCoreBaseDemo.IService;
+using TheAcme.EntityModule.DbModels;
 
 namespace NetCoreBaseApiDemo.Controllers
 {
@@ -17,46 +21,46 @@ namespace NetCoreBaseApiDemo.Controllers
 
 
         private readonly ILogger<SysAccountController> _logger;
-        private readonly ISysAccountRepository _repository;
+        private readonly ISysAccountService _service;
         private readonly IRedisMangerService _redisManger;
 
-        public SysAccountController(ILogger<SysAccountController> logger, ISysAccountRepository repository, IRedisMangerService redisManger)
+        public SysAccountController(ILogger<SysAccountController> logger, ISysAccountService service, IRedisMangerService redisManger)
         {
             _logger = logger;
-            _repository = repository;
+            _service = service;
             _redisManger = redisManger;
         }
-        [HttpGet]
-        public IEnumerable<SysAccount> Get()
+        [HttpGet("id")]
+        [ProducesResponseType(typeof(SysAccountDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Get(Guid id)
         {
-
-            if (!_redisManger.Get("list"))
+            try
             {
-                var data = _repository.GetAll();
-                _redisManger.Set("list", data, TimeSpan.FromSeconds(300));
-                return data;
+                var data = _service.Get(id);
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    return Ok(data);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                var data = _redisManger.Get<IEnumerable<SysAccount>>("list");
-                return data;
+                throw ex;
             }
-
-
-
-
+           
         }
 
         [HttpPost]
-        public Guid Post()
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Post(SysAccount entity)
         {
-            return _repository.Insert(new SysAccount
-            {
-                Id = Guid.NewGuid().ToString(),
-                UserName = "Admin",
-                Passwprd = "123456",
-                CreateTime = DateTime.Now,
-            });
+            entity.Id = Guid.NewGuid();
+            return Ok(_service.Insert(entity));
         }
     }
 }

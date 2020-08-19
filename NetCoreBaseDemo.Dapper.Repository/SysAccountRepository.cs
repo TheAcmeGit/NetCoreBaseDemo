@@ -8,11 +8,13 @@ using TheAcme.EntityModule.DbModels;
 
 namespace NetCoreBaseDemo.Dapper.Repository
 {
-    public class SysAccountRepository : BaseRepository< string, SysAccount>, ISysAccountRepository
+    public class SysAccountRepository : BaseRepository< Guid, SysAccount>, ISysAccountRepository
     {
-        // protected IDbConnection _dbConnection;
-        public SysAccountRepository(IDbConnection dbConnection) : base(dbConnection)
+        protected IDbConnection _dbConnection;
+        public SysAccountRepository(IDbConnection dbConnection)
         {
+            _dbConnection = dbConnection;
+            base._dbBaseConnection = dbConnection;
         }
 
 

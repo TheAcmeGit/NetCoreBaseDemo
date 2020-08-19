@@ -43,7 +43,7 @@ namespace NetCoreBaseApiDemo
             var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
             services.AddSwagger(xmlPath);
             services.AddDapper(Configuration.GetConnectionString("DefaultConnection"));
-
+            services.AddAutoMapper_Cus();
             services.AddRedis_Cus();
             services.AddMiniProfiler_Cus();
 

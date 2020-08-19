@@ -10,9 +10,11 @@ namespace NetCoreBaseDemo.Dapper.Repository
 {
     public class SysRoleRelatePermissionRepository : BaseRepository<string, SysRoleRelatePermission>, ISysRoleRelatePermissionRepository
     {
-        // protected IDbConnection _dbConnection;
-        public SysRoleRelatePermissionRepository(IDbConnection dbConnection) : base(dbConnection)
+        protected IDbConnection _dbConnection;
+        public SysRoleRelatePermissionRepository(IDbConnection dbConnection)
         {
+            _dbConnection = dbConnection;
+            base._dbBaseConnection = dbConnection;
         }
 
 
