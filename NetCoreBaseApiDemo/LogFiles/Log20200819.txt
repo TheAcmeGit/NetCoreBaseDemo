@@ -1,0 +1,196 @@
+2020-08-19 08:45:37.854 +08:00 [INF] 程序启动
+2020-08-19 08:45:43.563 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 08:45:44.759 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 08:45:44.760 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 08:45:44.761 +08:00 [INF] Hosting environment: Development
+2020-08-19 08:45:44.762 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 08:45:49.576 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 08:45:50.271 +08:00 [INF] Request finished in 714.5744ms 200 text/html;charset=utf-8
+2020-08-19 08:45:53.595 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 08:45:53.982 +08:00 [INF] Request finished in 387.7459ms 200 application/json;charset=utf-8
+2020-08-19 08:46:01.249 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast  
+2020-08-19 08:46:01.885 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-19 08:46:01.962 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-19 08:46:01.970 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 08:46:01.980 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0674ms.
+2020-08-19 08:46:01.986 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-19 08:46:02.013 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 46.2012ms
+2020-08-19 08:46:02.015 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-19 08:46:02.024 +08:00 [INF] Request finished in 775.3068ms 200 application/json; charset=utf-8
+2020-08-19 08:46:37.022 +08:00 [INF] Application is shutting down...
+2020-08-19 09:13:43.445 +08:00 [INF] 程序启动
+2020-08-19 09:13:44.549 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:13:44.822 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:13:44.823 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:13:44.823 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:13:44.824 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:13:46.614 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:13:46.963 +08:00 [INF] Request finished in 350.6406ms 200 text/html;charset=utf-8
+2020-08-19 09:13:47.862 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:13:48.210 +08:00 [INF] Request finished in 347.4351ms 200 application/json;charset=utf-8
+2020-08-19 09:13:51.650 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast  
+2020-08-19 09:13:52.177 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:13:52.249 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-19 09:13:52.258 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:13:52.267 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3006ms.
+2020-08-19 09:13:52.274 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-19 09:13:52.310 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 55.477ms
+2020-08-19 09:13:52.312 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:13:52.350 +08:00 [INF] Request finished in 699.9229ms 200 application/json; charset=utf-8
+2020-08-19 09:14:12.805 +08:00 [INF] Application is shutting down...
+2020-08-19 09:21:37.954 +08:00 [INF] 程序启动
+2020-08-19 09:21:38.235 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:21:38.426 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:21:38.427 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:21:38.427 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:21:38.427 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:21:39.003 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:21:39.269 +08:00 [INF] Request finished in 270.9317ms 200 text/html;charset=utf-8
+2020-08-19 09:21:39.845 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:21:39.988 +08:00 [INF] Request finished in 144.8574ms 200 application/json;charset=utf-8
+2020-08-19 09:21:44.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage  
+2020-08-19 09:21:44.589 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:21:44.617 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 09:21:44.624 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:21:45.246 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 613.7711ms.
+2020-08-19 09:21:45.252 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-08-19 09:21:45.259 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 636.2112ms
+2020-08-19 09:21:45.261 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:21:45.270 +08:00 [INF] Request finished in 735.9109ms 200 text/plain; charset=utf-8
+2020-08-19 09:22:05.231 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id?id=111  
+2020-08-19 09:22:05.235 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:22:05.267 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 09:22:05.326 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:22:05.344 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 15.1999ms.
+2020-08-19 09:22:05.347 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-08-19 09:22:05.350 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 81.6053ms
+2020-08-19 09:22:05.352 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:22:05.354 +08:00 [INF] Request finished in 123.8801ms 400 application/json; charset=utf-8
+2020-08-19 09:22:51.177 +08:00 [INF] Application is shutting down...
+2020-08-19 09:23:59.507 +08:00 [INF] 程序启动
+2020-08-19 09:23:59.766 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:23:59.940 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:23:59.941 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:23:59.941 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:23:59.942 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:24:00.179 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:24:00.495 +08:00 [INF] Request finished in 319.3419ms 200 text/html;charset=utf-8
+2020-08-19 09:24:00.678 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:24:00.859 +08:00 [INF] Request finished in 181.2172ms 200 application/json;charset=utf-8
+2020-08-19 09:24:04.408 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage  
+2020-08-19 09:24:04.459 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:24:04.492 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 09:24:04.499 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:24:04.618 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 110.8512ms.
+2020-08-19 09:24:04.627 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 09:24:04.636 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 138.4312ms
+2020-08-19 09:24:04.637 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:24:04.647 +08:00 [INF] Request finished in 239.7212ms 200 application/json; charset=utf-8
+2020-08-19 09:24:19.209 +08:00 [INF] Application is shutting down...
+2020-08-19 09:25:13.088 +08:00 [INF] 程序启动
+2020-08-19 09:25:33.773 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:25:36.661 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:25:36.663 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:25:36.663 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:25:36.663 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:25:41.118 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:25:41.580 +08:00 [INF] Request finished in 465.4804ms 200 text/html;charset=utf-8
+2020-08-19 09:25:42.021 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:25:42.532 +08:00 [INF] Request finished in 511.5017ms 200 application/json;charset=utf-8
+2020-08-19 09:25:46.226 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage  
+2020-08-19 09:25:46.973 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:25:47.234 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 09:25:47.500 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:25:48.248 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 729.0887ms.
+2020-08-19 09:26:23.145 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 09:26:23.205 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 35964.8316ms
+2020-08-19 09:26:23.207 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:26:23.232 +08:00 [INF] Request finished in 37006.7184ms 200 application/json; charset=utf-8
+2020-08-19 09:26:42.907 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id?id=888  
+2020-08-19 09:26:42.911 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:26:42.937 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 09:26:43.005 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:26:43.308 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 301.0474ms.
+2020-08-19 09:28:01.423 +08:00 [INF] 程序启动
+2020-08-19 09:28:16.780 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:28:17.176 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:28:17.177 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:28:17.177 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:28:17.178 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:28:19.012 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:28:19.584 +08:00 [INF] Request finished in 575.3637ms 200 text/html;charset=utf-8
+2020-08-19 09:28:19.962 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:28:20.108 +08:00 [INF] Request finished in 146.5161ms 200 application/json;charset=utf-8
+2020-08-19 09:28:24.349 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast  
+2020-08-19 09:28:24.454 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:28:24.495 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-19 09:28:24.510 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:28:24.522 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.7861ms.
+2020-08-19 09:29:29.421 +08:00 [INF] 程序启动
+2020-08-19 09:29:35.556 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:29:35.952 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:29:35.953 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:29:35.953 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:29:35.954 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:29:36.579 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:29:36.754 +08:00 [INF] Request finished in 180.8833ms 200 text/html;charset=utf-8
+2020-08-19 09:29:36.931 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:29:37.126 +08:00 [INF] Request finished in 194.4688ms 200 application/json;charset=utf-8
+2020-08-19 09:29:42.022 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast  
+2020-08-19 09:29:42.121 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:29:42.167 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-19 09:29:42.248 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:29:42.257 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.4158ms.
+2020-08-19 09:33:55.468 +08:00 [INF] 程序启动
+2020-08-19 09:33:55.743 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:33:55.927 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:33:55.928 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:33:55.928 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:33:55.928 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:33:56.409 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:33:56.619 +08:00 [INF] Request finished in 214.619ms 200 text/html;charset=utf-8
+2020-08-19 09:33:56.773 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:33:56.861 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/ApiTokenManage" for actions - NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo),NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 09:33:57.050 +08:00 [INF] Request finished in 276.9776ms 500 text/plain
+2020-08-19 09:34:00.266 +08:00 [INF] Application is shutting down...
+2020-08-19 09:34:12.219 +08:00 [INF] 程序启动
+2020-08-19 09:34:12.489 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:34:12.665 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:34:12.666 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:34:12.666 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:34:12.666 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:34:13.287 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:34:13.444 +08:00 [INF] Request finished in 162.625ms 200 text/html;charset=utf-8
+2020-08-19 09:34:13.582 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:34:13.741 +08:00 [INF] Request finished in 159.5391ms 200 application/json;charset=utf-8
+2020-08-19 09:34:16.762 +08:00 [INF] Application is shutting down...
+2020-08-19 09:34:29.827 +08:00 [INF] 程序启动
+2020-08-19 09:34:30.086 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 09:34:30.255 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 09:34:30.256 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 09:34:30.256 +08:00 [INF] Hosting environment: Development
+2020-08-19 09:34:30.256 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 09:34:30.898 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 09:34:31.019 +08:00 [INF] Request finished in 136.2219ms 200 text/html;charset=utf-8
+2020-08-19 09:34:31.165 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 09:34:31.329 +08:00 [INF] Request finished in 164.3454ms 200 application/json;charset=utf-8
+2020-08-19 09:34:35.193 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 09:34:35.277 +08:00 [INF] Authorization failed.
+2020-08-19 09:34:35.282 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 09:34:35.296 +08:00 [INF] Request finished in 104.0401ms 401 
+2020-08-19 09:34:43.075 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage  
+2020-08-19 09:34:43.094 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:34:43.134 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 09:34:43.143 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 09:34:43.252 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 102.452ms.
+2020-08-19 09:34:43.260 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 09:34:43.270 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 130.3422ms
+2020-08-19 09:34:43.271 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 09:34:43.274 +08:00 [INF] Request finished in 199.0059ms 200 application/json; charset=utf-8
+2020-08-19 09:41:46.699 +08:00 [INF] Application is shutting down...

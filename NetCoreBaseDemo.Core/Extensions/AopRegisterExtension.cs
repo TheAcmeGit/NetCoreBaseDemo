@@ -17,9 +17,10 @@ namespace NetCoreBaseDemo.Core.Extensions
         {
 
             builder.RegisterType(typeof(SayHelloAop));
-            builder.RegisterType<SysAccountRepository>().As<ISysAccountRepository>().InstancePerLifetimeScope().EnableInterfaceInterceptors().InterceptedBy(typeof(SayHelloAop));
+            builder.RegisterType<SysAccountsRepository>().As<ISysAccountsRepository>().InstancePerLifetimeScope().EnableInterfaceInterceptors().InterceptedBy(typeof(SayHelloAop));
 
             builder.RegisterType<RedisManagerService>().As<IRedisMangerService>().InstancePerLifetimeScope();
+
             return builder;
         }
     }

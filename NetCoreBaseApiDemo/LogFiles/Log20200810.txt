@@ -1,0 +1,954 @@
+2020-08-10 14:39:06.062 +08:00 [INF] 程序启动
+2020-08-10 14:39:11.032 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-10 14:39:11.035 +08:00 [INF] Hosting environment: Development
+2020-08-10 14:39:11.036 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-10 14:39:11.134 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/weatherforecast  
+2020-08-10 14:39:11.496 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:39:11.566 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-10 14:39:12.822 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:39:12.831 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2946ms.
+2020-08-10 14:39:12.835 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-10 14:39:12.902 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 1331.6315ms
+2020-08-10 14:39:12.903 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:39:13.044 +08:00 [INF] Request finished in 1912.6226ms 200 application/json; charset=utf-8
+2020-08-10 14:39:13.387 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/favicon.ico  
+2020-08-10 14:39:13.450 +08:00 [INF] Request finished in 62.3594ms 404 
+2020-08-10 14:39:18.136 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/  
+2020-08-10 14:39:18.163 +08:00 [INF] Request finished in 27.0121ms 301 
+2020-08-10 14:39:18.166 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/index.html  
+2020-08-10 14:39:18.221 +08:00 [INF] Request finished in 54.8404ms 200 text/html;charset=utf-8
+2020-08-10 14:39:18.252 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/swagger-ui.css  
+2020-08-10 14:39:18.254 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/swagger-ui-bundle.js  
+2020-08-10 14:39:18.254 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/swagger-ui-standalone-preset.js  
+2020-08-10 14:39:18.432 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-08-10 14:39:18.434 +08:00 [INF] Request finished in 182.4586ms 200 text/css
+2020-08-10 14:39:18.448 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-08-10 14:39:18.448 +08:00 [INF] Request finished in 194.4766ms 200 application/javascript
+2020-08-10 14:39:18.516 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-08-10 14:39:18.516 +08:00 [INF] Request finished in 262.2844ms 200 application/javascript
+2020-08-10 14:39:18.728 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/swagger/v1/swagger.json  
+2020-08-10 14:39:19.408 +08:00 [INF] Request finished in 680.288ms 200 application/json;charset=utf-8
+2020-08-10 14:39:40.824 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:53666/NavMenuManage application/json 124
+2020-08-10 14:39:40.830 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.post (NetCoreBaseApiDemo)'
+2020-08-10 14:39:40.888 +08:00 [INF] Route matched with {action = "post", controller = "NavMenuManage"}. Executing controller action with signature System.String post(NetCoreBaseDemo.DBEntity.NavMenu) on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:39:41.706 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:39:42.792 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1085.2567ms.
+2020-08-10 14:39:42.793 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-08-10 14:39:42.794 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.post (NetCoreBaseApiDemo) in 1905.807ms
+2020-08-10 14:39:42.794 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.post (NetCoreBaseApiDemo)'
+2020-08-10 14:39:42.796 +08:00 [INF] Request finished in 1972.9251ms 200 text/plain; charset=utf-8
+2020-08-10 14:40:19.390 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/NavMenuManage  
+2020-08-10 14:40:19.394 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:40:19.398 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:40:19.400 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:40:19.829 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 430.0018ms
+2020-08-10 14:40:19.839 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:40:19.853 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.DataException: Error parsing column 6 (Id=3FA85F64-5717-4562-B3FC-2C963F66AFA6 - String)
+ ---> System.InvalidCastException: Invalid cast from 'System.String' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.String.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize1563ec37-c565-46b0-9c38-b62ac8fc9f51(IDataReader )
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3634
+   at Deserialize1563ec37-c565-46b0-9c38-b62ac8fc9f51(IDataReader )
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Dapper.SimpleCRUD.GetList[T](IDbConnection connection, Object whereConditions, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at Dapper.SimpleCRUD.GetList[T](IDbConnection connection)
+   at NetCoreBaseDemo.Dapper.Repository.BaseRepository`2.GetAll()
+   at NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get()
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-10 14:40:20.382 +08:00 [INF] Request finished in 991.43ms 500 text/plain
+2020-08-10 14:40:30.063 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/NavMenuManage  
+2020-08-10 14:40:30.066 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:40:30.067 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:40:30.068 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:40:30.085 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 16.9818ms
+2020-08-10 14:40:30.085 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:40:30.085 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.DataException: Error parsing column 6 (Id=3FA85F64-5717-4562-B3FC-2C963F66AFA6 - String)
+ ---> System.InvalidCastException: Invalid cast from 'System.String' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.String.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize1563ec37-c565-46b0-9c38-b62ac8fc9f51(IDataReader )
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3634
+   at Deserialize1563ec37-c565-46b0-9c38-b62ac8fc9f51(IDataReader )
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Dapper.SimpleCRUD.GetList[T](IDbConnection connection, Object whereConditions, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at Dapper.SimpleCRUD.GetList[T](IDbConnection connection)
+   at NetCoreBaseDemo.Dapper.Repository.BaseRepository`2.GetAll()
+   at NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get()
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-10 14:40:30.091 +08:00 [INF] Request finished in 27.7975ms 500 text/plain
+2020-08-10 14:40:44.288 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/NavMenuManage/3fa85f64-5717-4562-b3fc-2c963f66afa6  
+2020-08-10 14:40:44.290 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:40:44.311 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get(System.String) on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:40:44.313 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:40:44.317 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 6.2805ms
+2020-08-10 14:40:44.318 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:40:44.318 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.DataException: Error parsing column 6 (Id=3FA85F64-5717-4562-B3FC-2C963F66AFA6 - String)
+ ---> System.InvalidCastException: Invalid cast from 'System.String' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.String.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize1563ec37-c565-46b0-9c38-b62ac8fc9f51(IDataReader )
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3634
+   at Deserialize1563ec37-c565-46b0-9c38-b62ac8fc9f51(IDataReader )
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Dapper.SimpleCRUD.GetList[T](IDbConnection connection, Object whereConditions, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at Dapper.SimpleCRUD.GetList[T](IDbConnection connection)
+   at NetCoreBaseDemo.Dapper.Repository.BaseRepository`2.GetAll()
+   at NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get(String id)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-10 14:40:44.323 +08:00 [INF] Request finished in 35.1207ms 500 text/plain
+2020-08-10 14:42:41.687 +08:00 [INF] 程序启动
+2020-08-10 14:42:46.387 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-10 14:42:46.390 +08:00 [INF] Hosting environment: Development
+2020-08-10 14:42:46.391 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-10 14:42:46.523 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/weatherforecast  
+2020-08-10 14:42:47.031 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:42:47.083 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-10 14:42:48.058 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:42:48.074 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.7462ms.
+2020-08-10 14:42:48.085 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-10 14:42:48.166 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 1077.41ms
+2020-08-10 14:42:48.168 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:42:48.233 +08:00 [INF] Request finished in 1714.3253ms 200 application/json; charset=utf-8
+2020-08-10 14:43:04.509 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/index.html  
+2020-08-10 14:43:04.593 +08:00 [INF] Request finished in 84.6648ms 200 text/html;charset=utf-8
+2020-08-10 14:43:04.994 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/swagger/v1/swagger.json  
+2020-08-10 14:43:05.412 +08:00 [INF] Request finished in 418.7613ms 200 application/json;charset=utf-8
+2020-08-10 14:43:09.115 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/NavMenuManage  
+2020-08-10 14:43:09.120 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:43:09.129 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:43:09.625 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:43:11.317 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1691.1536ms.
+2020-08-10 14:43:11.319 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 14:43:11.322 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 2192.3976ms
+2020-08-10 14:43:11.322 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:43:11.324 +08:00 [INF] Request finished in 2209.4388ms 200 application/json; charset=utf-8
+2020-08-10 14:43:30.055 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/NavMenuManage/A85F64-5717-4562-B3FC-2C963F66AFA6  
+2020-08-10 14:43:30.057 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:43:30.067 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get(System.String) on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:43:30.099 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:43:30.183 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 82.847ms.
+2020-08-10 14:43:30.184 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 14:43:30.185 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 117.96ms
+2020-08-10 14:43:30.185 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:43:30.186 +08:00 [INF] Request finished in 131.3753ms 200 application/json; charset=utf-8
+2020-08-10 14:43:56.413 +08:00 [INF] Request starting HTTP/1.1 PUT http://localhost:53666/NavMenuManage application/json 152
+2020-08-10 14:43:56.415 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo)'
+2020-08-10 14:43:56.418 +08:00 [INF] Route matched with {action = "put", controller = "NavMenuManage"}. Executing controller action with signature Int32 put(NetCoreBaseDemo.DBEntity.NavMenu) on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:43:56.438 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:43:56.581 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 142.4886ms.
+2020-08-10 14:43:56.582 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-08-10 14:43:56.582 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo) in 163.5298ms
+2020-08-10 14:43:56.583 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo)'
+2020-08-10 14:43:56.584 +08:00 [INF] Request finished in 171.1933ms 200 application/json; charset=utf-8
+2020-08-10 14:44:03.084 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/NavMenuManage  
+2020-08-10 14:44:03.087 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:44:03.089 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:44:03.091 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:44:03.094 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.1253ms.
+2020-08-10 14:44:03.095 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 14:44:03.096 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 6.7144ms
+2020-08-10 14:44:03.096 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:44:03.097 +08:00 [INF] Request finished in 12.6451ms 200 application/json; charset=utf-8
+2020-08-10 14:44:07.184 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/NavMenuManage  
+2020-08-10 14:44:07.186 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:44:07.187 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:44:07.189 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:44:07.192 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.4755ms.
+2020-08-10 14:44:07.193 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 14:44:07.195 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.0423ms
+2020-08-10 14:44:07.195 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 14:44:07.196 +08:00 [INF] Request finished in 12.5032ms 200 application/json; charset=utf-8
+2020-08-10 14:44:16.106 +08:00 [INF] Request starting HTTP/1.1 PUT http://localhost:53666/NavMenuManage application/json 152
+2020-08-10 14:44:16.108 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo)'
+2020-08-10 14:44:16.109 +08:00 [INF] Route matched with {action = "put", controller = "NavMenuManage"}. Executing controller action with signature Int32 put(NetCoreBaseDemo.DBEntity.NavMenu) on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 14:44:16.111 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 14:44:16.116 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.9947ms.
+2020-08-10 14:44:16.117 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Int32'.
+2020-08-10 14:44:16.118 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo) in 9.0309ms
+2020-08-10 14:44:16.118 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.put (NetCoreBaseApiDemo)'
+2020-08-10 14:44:16.119 +08:00 [INF] Request finished in 13.1472ms 200 application/json; charset=utf-8
+2020-08-10 14:45:06.579 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/index.html  
+2020-08-10 14:45:06.582 +08:00 [INF] Request finished in 3.3143ms 200 text/html;charset=utf-8
+2020-08-10 14:45:06.737 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/swagger/v1/swagger.json  
+2020-08-10 14:45:06.761 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/favicon-32x32.png  
+2020-08-10 14:45:06.768 +08:00 [INF] Request finished in 31.1911ms 200 application/json;charset=utf-8
+2020-08-10 14:45:06.923 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-08-10 14:45:06.924 +08:00 [INF] Request finished in 162.8977ms 200 image/png
+2020-08-10 15:35:30.225 +08:00 [INF] 程序启动
+2020-08-10 15:35:30.834 +08:00 [FTL] Application startup exception
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Microsoft.AspNetCore.Cors.Infrastructure.CorsService.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(Microsoft.Extensions.Options.IOptions`1[Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions], Microsoft.Extensions.Logging.ILoggerFactory)' on type 'CorsService'.
+ ---> System.InvalidOperationException: The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the CORS policy by listing individual origins if credentials needs to be supported.
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.Build()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions.AddPolicy(String name, Action`1 configurePolicy)
+   at NetCoreBaseApiDemo.Startup.<>c.<ConfigureServices>b__4_0(CorsOptions options) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo\Startup.cs:line 43
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsService..ctor(IOptions`1 options, ILoggerFactory loggerFactory)
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-08-10 15:35:53.653 +08:00 [INF] 程序启动
+2020-08-10 15:35:54.400 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-10 15:35:54.403 +08:00 [INF] Hosting environment: Development
+2020-08-10 15:35:54.405 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-10 15:35:54.488 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:53666/weatherforecast  
+2020-08-10 15:35:54.901 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:35:55.035 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseApiDemo.WeatherForecast] Get() on controller NetCoreBaseApiDemo.Controllers.WeatherForecastController (NetCoreBaseApiDemo).
+2020-08-10 15:35:57.720 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 15:35:57.752 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.8956ms.
+2020-08-10 15:35:57.769 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseApiDemo.WeatherForecast[]'.
+2020-08-10 15:35:57.992 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo) in 2950.569ms
+2020-08-10 15:35:57.993 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.WeatherForecastController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:35:58.077 +08:00 [INF] Request finished in 3594.4272ms 200 application/json; charset=utf-8
+2020-08-10 15:42:47.965 +08:00 [INF] 程序启动
+2020-08-10 15:42:48.744 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-10 15:42:48.749 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-10 15:42:48.750 +08:00 [INF] Hosting environment: Development
+2020-08-10 15:42:48.750 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-10 15:42:49.429 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-08-10 15:42:49.597 +08:00 [INF] Request finished in 175.3578ms 301 
+2020-08-10 15:42:49.603 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-10 15:42:49.639 +08:00 [INF] Request finished in 35.8685ms 200 text/html;charset=utf-8
+2020-08-10 15:42:49.873 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-10 15:42:50.008 +08:00 [INF] Request finished in 134.1949ms 200 application/json;charset=utf-8
+2020-08-10 15:42:57.092 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/NavMenuManage  
+2020-08-10 15:42:57.140 +08:00 [INF] CORS policy execution successful.
+2020-08-10 15:42:57.175 +08:00 [INF] Request finished in 83.4859ms 204 
+2020-08-10 15:42:57.202 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 15:42:57.212 +08:00 [INF] CORS policy execution successful.
+2020-08-10 15:42:57.219 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:42:57.293 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 15:42:57.942 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 15:42:58.526 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 574.8859ms.
+2020-08-10 15:42:58.533 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 15:42:58.543 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 1241.6677ms
+2020-08-10 15:42:58.544 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:42:58.553 +08:00 [INF] Request finished in 1351.2155ms 200 application/json; charset=utf-8
+2020-08-10 15:43:41.311 +08:00 [INF] Application is shutting down...
+2020-08-10 15:43:59.899 +08:00 [INF] 程序启动
+2020-08-10 15:44:00.461 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-10 15:44:00.466 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-10 15:44:00.467 +08:00 [INF] Hosting environment: Development
+2020-08-10 15:44:00.468 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-10 15:44:01.173 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-10 15:44:01.357 +08:00 [INF] Request finished in 186.0712ms 200 text/html;charset=utf-8
+2020-08-10 15:44:01.510 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-10 15:44:01.699 +08:00 [INF] Request finished in 189.1663ms 200 application/json;charset=utf-8
+2020-08-10 15:44:05.355 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/NavMenuManage  
+2020-08-10 15:44:05.439 +08:00 [INF] CORS policy execution successful.
+2020-08-10 15:44:05.488 +08:00 [INF] Request finished in 122.6676ms 204 
+2020-08-10 15:44:05.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 15:44:05.548 +08:00 [INF] CORS policy execution successful.
+2020-08-10 15:44:05.562 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:44:05.643 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 15:44:06.206 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 15:44:06.429 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 214.9097ms.
+2020-08-10 15:44:06.437 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 15:44:06.450 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 786.6714ms
+2020-08-10 15:44:06.450 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:44:06.458 +08:00 [INF] Request finished in 924.6249ms 200 application/json; charset=utf-8
+2020-08-10 15:51:23.269 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 15:51:23.282 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:51:23.285 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 15:51:23.294 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 15:51:27.803 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4506.9891ms.
+2020-08-10 15:51:27.808 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 15:51:27.809 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4523.1214ms
+2020-08-10 15:51:27.811 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:51:27.813 +08:00 [INF] Request finished in 4545.902ms 200 application/json; charset=utf-8
+2020-08-10 15:51:56.000 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 15:51:56.003 +08:00 [INF] CORS policy execution successful.
+2020-08-10 15:51:56.008 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:51:56.019 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 15:51:56.056 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 15:51:56.063 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.2118ms.
+2020-08-10 15:51:56.065 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 15:51:56.069 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 35.0765ms
+2020-08-10 15:51:56.071 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:51:56.073 +08:00 [INF] Request finished in 73.8197ms 200 application/json; charset=utf-8
+2020-08-10 15:52:00.978 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 15:52:01.083 +08:00 [INF] CORS policy execution successful.
+2020-08-10 15:52:01.086 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:52:01.093 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 15:52:01.098 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 15:52:01.106 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.7161ms.
+2020-08-10 15:52:01.109 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 15:52:01.112 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 15.2664ms
+2020-08-10 15:52:01.113 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 15:52:01.115 +08:00 [INF] Request finished in 137.4639ms 200 application/json; charset=utf-8
+2020-08-10 16:46:12.567 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-10 16:46:13.493 +08:00 [INF] Request finished in 1030.2272ms 200 text/html;charset=utf-8
+2020-08-10 16:46:13.941 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-10 16:46:14.822 +08:00 [INF] Request finished in 881.4053ms 200 application/json;charset=utf-8
+2020-08-10 16:46:17.332 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:46:17.553 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:46:17.630 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:46:18.071 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:46:18.308 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 234.8475ms.
+2020-08-10 16:46:18.310 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:46:18.351 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 717.925ms
+2020-08-10 16:46:18.353 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:46:18.388 +08:00 [INF] Request finished in 1056.6628ms 200 application/json; charset=utf-8
+2020-08-10 16:51:23.974 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/NavMenuManage  
+2020-08-10 16:51:24.075 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:51:24.163 +08:00 [INF] Request finished in 189.5483ms 204 
+2020-08-10 16:51:24.166 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:51:24.168 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:51:24.169 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:51:24.170 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:51:24.184 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:51:24.436 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 250.4866ms.
+2020-08-10 16:51:24.439 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:51:24.440 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 257.0137ms
+2020-08-10 16:51:24.442 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:51:24.443 +08:00 [INF] Request finished in 277.2654ms 200 application/json; charset=utf-8
+2020-08-10 16:51:31.040 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/NavMenuManage  
+2020-08-10 16:51:31.042 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:51:31.043 +08:00 [INF] Request finished in 3.1786ms 204 
+2020-08-10 16:51:31.092 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:51:31.093 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:51:31.094 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:51:31.148 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:51:31.151 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:51:31.370 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 145.1888ms.
+2020-08-10 16:51:31.374 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:51:31.388 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 237.3139ms
+2020-08-10 16:51:31.389 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:51:31.405 +08:00 [INF] Request finished in 312.8455ms 200 application/json; charset=utf-8
+2020-08-10 16:53:47.143 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage?title=%E7%9C%BC%E9%95%9C  
+2020-08-10 16:53:47.145 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:53:47.146 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:53:47.147 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:53:47.167 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:53:47.171 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.7009ms.
+2020-08-10 16:53:47.173 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:53:47.174 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 25.4135ms
+2020-08-10 16:53:47.175 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:53:47.177 +08:00 [INF] Request finished in 34.7672ms 200 application/json; charset=utf-8
+2020-08-10 16:55:23.311 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage?title=%E7%9C%BC%E9%95%9C  
+2020-08-10 16:55:23.312 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:55:23.313 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:23.314 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:55:23.339 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:55:23.341 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.1826ms.
+2020-08-10 16:55:23.342 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:55:23.343 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.9186ms
+2020-08-10 16:55:23.345 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:23.347 +08:00 [INF] Request finished in 36.4267ms 200 application/json; charset=utf-8
+2020-08-10 16:55:29.957 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage?title=%E7%9C%BC%E9%95%9C  
+2020-08-10 16:55:29.959 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:55:29.960 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:29.960 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:55:29.963 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:55:29.965 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.3451ms.
+2020-08-10 16:55:29.978 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:55:29.995 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 32.634ms
+2020-08-10 16:55:29.997 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:29.999 +08:00 [INF] Request finished in 41.3508ms 200 application/json; charset=utf-8
+2020-08-10 16:55:39.597 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:55:39.600 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:55:39.602 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:39.603 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:55:39.605 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:55:39.608 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2784ms.
+2020-08-10 16:55:39.609 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:55:39.610 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.5749ms
+2020-08-10 16:55:39.612 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:39.613 +08:00 [INF] Request finished in 15.7784ms 200 application/json; charset=utf-8
+2020-08-10 16:55:57.566 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:55:57.571 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:55:57.572 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:57.573 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:55:57.576 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:55:57.627 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 49.4679ms.
+2020-08-10 16:55:57.628 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:55:57.629 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 53.6581ms
+2020-08-10 16:55:57.631 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:55:57.634 +08:00 [INF] Request finished in 67.6401ms 200 application/json; charset=utf-8
+2020-08-10 16:57:57.606 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:57:57.615 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:57:57.617 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:57:57.618 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:57:57.620 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:57:57.639 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 18.5961ms.
+2020-08-10 16:57:57.641 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:57:57.659 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 39.641ms
+2020-08-10 16:57:57.669 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:57:57.670 +08:00 [INF] Request finished in 64.9125ms 200 application/json; charset=utf-8
+2020-08-10 16:58:05.830 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:58:05.833 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:58:05.834 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:58:05.835 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:58:05.837 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:58:05.877 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 38.4327ms.
+2020-08-10 16:58:05.913 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:58:05.915 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 78.7013ms
+2020-08-10 16:58:05.917 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:58:05.918 +08:00 [INF] Request finished in 88.413ms 200 application/json; charset=utf-8
+2020-08-10 16:58:24.109 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:58:24.127 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:58:24.128 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:58:24.143 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:58:24.147 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:58:24.191 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2122ms.
+2020-08-10 16:58:24.193 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:58:24.194 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 47.3365ms
+2020-08-10 16:58:24.195 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:58:24.197 +08:00 [INF] Request finished in 88.4387ms 200 application/json; charset=utf-8
+2020-08-10 16:59:06.415 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 16:59:06.417 +08:00 [INF] CORS policy execution successful.
+2020-08-10 16:59:06.419 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:59:06.420 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 16:59:06.421 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 16:59:06.457 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 34.3309ms.
+2020-08-10 16:59:06.459 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 16:59:06.460 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 39.0711ms
+2020-08-10 16:59:06.462 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 16:59:06.463 +08:00 [INF] Request finished in 47.4765ms 200 application/json; charset=utf-8
+2020-08-10 17:02:11.655 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:02:11.658 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:02:11.659 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:02:11.660 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:02:11.673 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:02:11.676 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2131ms.
+2020-08-10 17:02:11.695 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:02:11.697 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 35.6615ms
+2020-08-10 17:02:11.698 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:02:11.699 +08:00 [INF] Request finished in 44.3512ms 200 application/json; charset=utf-8
+2020-08-10 17:02:15.437 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:02:15.439 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:02:15.440 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:02:15.454 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:02:15.459 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:02:15.461 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.1213ms.
+2020-08-10 17:02:15.462 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:02:15.463 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.0517ms
+2020-08-10 17:02:15.466 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:02:15.467 +08:00 [INF] Request finished in 30.6987ms 200 application/json; charset=utf-8
+2020-08-10 17:03:17.327 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:03:17.329 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:03:17.330 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:17.331 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:03:17.354 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:03:17.359 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.1905ms.
+2020-08-10 17:03:17.361 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:03:17.362 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 29.8391ms
+2020-08-10 17:03:17.364 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:17.365 +08:00 [INF] Request finished in 38.2591ms 200 application/json; charset=utf-8
+2020-08-10 17:03:22.940 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:03:22.942 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:03:22.943 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:22.943 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:03:22.945 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:03:22.947 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0449ms.
+2020-08-10 17:03:22.948 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:03:22.949 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.3826ms
+2020-08-10 17:03:22.952 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:22.953 +08:00 [INF] Request finished in 12.5391ms 200 application/json; charset=utf-8
+2020-08-10 17:03:23.965 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:03:23.966 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:03:23.968 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:23.968 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:03:23.980 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:03:23.983 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.5042ms.
+2020-08-10 17:03:23.984 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:03:23.985 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 15.6524ms
+2020-08-10 17:03:23.987 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:23.988 +08:00 [INF] Request finished in 23.7485ms 200 application/json; charset=utf-8
+2020-08-10 17:03:24.284 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:03:24.286 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:03:24.287 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:24.289 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:03:24.312 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:03:24.314 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0736ms.
+2020-08-10 17:03:24.316 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:03:24.317 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 24.6605ms
+2020-08-10 17:03:24.318 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:24.319 +08:00 [INF] Request finished in 34.6269ms 200 application/json; charset=utf-8
+2020-08-10 17:03:24.541 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:03:24.543 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:03:24.544 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:24.545 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:03:24.554 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:03:24.557 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.4252ms.
+2020-08-10 17:03:24.559 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:03:24.560 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 14.329ms
+2020-08-10 17:03:24.562 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:24.563 +08:00 [INF] Request finished in 22.2152ms 200 application/json; charset=utf-8
+2020-08-10 17:03:24.812 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:03:24.891 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:03:24.915 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:24.917 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:03:24.919 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:03:24.922 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.372ms.
+2020-08-10 17:03:24.924 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:03:24.926 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.8768ms
+2020-08-10 17:03:24.928 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:24.934 +08:00 [INF] Request finished in 121.8502ms 200 application/json; charset=utf-8
+2020-08-10 17:03:38.966 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:03:39.007 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:03:39.007 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:39.008 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:03:39.010 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:03:39.013 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.3057ms.
+2020-08-10 17:03:39.014 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:03:39.015 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.4668ms
+2020-08-10 17:03:39.018 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:03:39.019 +08:00 [INF] Request finished in 53.4229ms 200 application/json; charset=utf-8
+2020-08-10 17:04:02.548 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:04:02.549 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:04:02.550 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:04:02.551 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:04:02.554 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:04:02.583 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 27.4779ms.
+2020-08-10 17:04:02.584 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:04:02.585 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 32.0903ms
+2020-08-10 17:04:02.588 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:04:02.590 +08:00 [INF] Request finished in 41.9375ms 200 application/json; charset=utf-8
+2020-08-10 17:04:17.271 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:04:17.274 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:04:17.274 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:04:17.276 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:04:17.278 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:04:17.280 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.038ms.
+2020-08-10 17:04:17.282 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:04:17.283 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.8235ms
+2020-08-10 17:04:17.284 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:04:17.285 +08:00 [INF] Request finished in 14.7144ms 200 application/json; charset=utf-8
+2020-08-10 17:04:28.679 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:04:28.680 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:04:28.681 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:04:28.683 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:04:28.685 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:04:28.689 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.1518ms.
+2020-08-10 17:04:28.691 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:04:28.692 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.9472ms
+2020-08-10 17:04:28.693 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:04:28.695 +08:00 [INF] Request finished in 16.2377ms 200 application/json; charset=utf-8
+2020-08-10 17:07:50.456 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:07:50.458 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:07:50.459 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:07:50.460 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:07:50.462 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:07:50.464 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2205ms.
+2020-08-10 17:07:50.467 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:07:50.468 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.8463ms
+2020-08-10 17:07:50.469 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:07:50.470 +08:00 [INF] Request finished in 14.6429ms 200 application/json; charset=utf-8
+2020-08-10 17:08:06.568 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:08:06.569 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:08:06.570 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:08:06.571 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:08:06.573 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:08:06.576 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.6213ms.
+2020-08-10 17:08:06.579 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:08:06.580 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.5198ms
+2020-08-10 17:08:06.583 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:08:06.584 +08:00 [INF] Request finished in 16.8647ms 200 application/json; charset=utf-8
+2020-08-10 17:08:10.383 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:08:10.385 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:08:10.385 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:08:10.386 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:08:10.405 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:08:10.406 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.1609ms.
+2020-08-10 17:08:10.407 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:08:10.408 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.3207ms
+2020-08-10 17:08:10.410 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:08:10.410 +08:00 [INF] Request finished in 27.2082ms 200 application/json; charset=utf-8
+2020-08-10 17:08:56.727 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:08:56.730 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:08:56.731 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:08:56.732 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:08:56.735 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:08:56.739 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.1398ms.
+2020-08-10 17:08:56.741 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:08:56.742 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.3784ms
+2020-08-10 17:08:56.743 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:08:56.744 +08:00 [INF] Request finished in 16.5342ms 200 application/json; charset=utf-8
+2020-08-10 17:09:54.718 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:09:54.720 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:09:54.720 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:09:54.721 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:09:54.723 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:09:54.726 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.955ms.
+2020-08-10 17:09:54.727 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:09:54.730 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.1238ms
+2020-08-10 17:09:54.732 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:09:54.733 +08:00 [INF] Request finished in 14.4906ms 200 application/json; charset=utf-8
+2020-08-10 17:09:58.790 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:09:58.791 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:09:58.791 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:09:58.793 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:09:58.795 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:09:58.798 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.4363ms.
+2020-08-10 17:09:58.801 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:09:58.802 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.0295ms
+2020-08-10 17:09:58.803 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:09:58.804 +08:00 [INF] Request finished in 14.3982ms 200 application/json; charset=utf-8
+2020-08-10 17:10:21.463 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:10:21.466 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:10:21.466 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:10:21.467 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:10:21.469 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:10:21.471 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.221ms.
+2020-08-10 17:10:21.474 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:10:21.474 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.9381ms
+2020-08-10 17:10:21.476 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:10:21.478 +08:00 [INF] Request finished in 14.9243ms 200 application/json; charset=utf-8
+2020-08-10 17:10:25.142 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:10:25.143 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:10:25.145 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:10:25.146 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:10:25.147 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:10:25.149 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.1241ms.
+2020-08-10 17:10:25.150 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:10:25.152 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.2427ms
+2020-08-10 17:10:25.154 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:10:25.155 +08:00 [INF] Request finished in 12.9744ms 200 application/json; charset=utf-8
+2020-08-10 17:12:15.822 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:12:15.823 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:12:15.824 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:12:15.826 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:12:15.829 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:12:15.831 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.4312ms.
+2020-08-10 17:12:15.833 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:12:15.834 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.4078ms
+2020-08-10 17:12:15.835 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:12:15.836 +08:00 [INF] Request finished in 13.8919ms 200 application/json; charset=utf-8
+2020-08-10 17:12:16.957 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:12:16.958 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:12:16.959 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:12:16.960 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:12:16.963 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:12:16.964 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.7409ms.
+2020-08-10 17:12:16.965 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:12:16.967 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.514ms
+2020-08-10 17:12:16.968 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:12:16.969 +08:00 [INF] Request finished in 12.3013ms 200 application/json; charset=utf-8
+2020-08-10 17:13:27.583 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:13:27.585 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:13:27.586 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:13:27.586 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:13:27.589 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:13:27.591 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.6179ms.
+2020-08-10 17:13:27.593 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:13:27.595 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 6.8193ms
+2020-08-10 17:13:27.596 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:13:27.597 +08:00 [INF] Request finished in 14.1029ms 200 application/json; charset=utf-8
+2020-08-10 17:13:47.368 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:13:47.370 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:13:47.370 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:13:47.371 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:13:47.374 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:13:47.389 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 13.4965ms.
+2020-08-10 17:13:47.391 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:13:47.393 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 19.4765ms
+2020-08-10 17:13:47.394 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:13:47.395 +08:00 [INF] Request finished in 26.7532ms 200 application/json; charset=utf-8
+2020-08-10 17:14:07.735 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:14:07.736 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:14:07.737 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:14:07.738 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:14:07.741 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:14:07.746 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.4126ms.
+2020-08-10 17:14:07.748 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:14:07.748 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.9076ms
+2020-08-10 17:14:07.749 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:14:07.751 +08:00 [INF] Request finished in 15.6048ms 200 application/json; charset=utf-8
+2020-08-10 17:14:21.224 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:14:21.226 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:14:21.226 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:14:21.227 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:14:21.229 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:14:21.230 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.7783ms.
+2020-08-10 17:14:21.231 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:14:21.287 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 58.2608ms
+2020-08-10 17:14:21.289 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:14:21.290 +08:00 [INF] Request finished in 65.6849ms 200 application/json; charset=utf-8
+2020-08-10 17:15:03.377 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:15:03.379 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:15:03.381 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:15:03.382 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:15:03.385 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:15:03.389 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.7617ms.
+2020-08-10 17:15:03.390 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:15:03.391 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.115ms
+2020-08-10 17:15:03.392 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:15:03.393 +08:00 [INF] Request finished in 16.059ms 200 application/json; charset=utf-8
+2020-08-10 17:15:18.735 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:15:18.736 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:15:18.737 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:15:18.738 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:15:18.741 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:15:18.744 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.6393ms.
+2020-08-10 17:15:18.747 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:15:18.748 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.2932ms
+2020-08-10 17:15:18.749 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:15:18.750 +08:00 [INF] Request finished in 15.3243ms 200 application/json; charset=utf-8
+2020-08-10 17:16:43.689 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:16:43.691 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:16:43.692 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:16:43.693 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:16:43.695 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:16:43.697 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.629ms.
+2020-08-10 17:16:43.699 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:16:43.701 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.1877ms
+2020-08-10 17:16:43.703 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:16:43.704 +08:00 [INF] Request finished in 15.0494ms 200 application/json; charset=utf-8
+2020-08-10 17:18:23.144 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:18:23.146 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:18:23.148 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:18:23.149 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:18:23.155 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:18:23.157 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2399ms.
+2020-08-10 17:18:23.158 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:18:23.158 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.4079ms
+2020-08-10 17:18:23.160 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:18:23.161 +08:00 [INF] Request finished in 16.9057ms 200 application/json; charset=utf-8
+2020-08-10 17:20:18.969 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:20:18.972 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:20:18.973 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:20:18.974 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:20:18.978 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:20:18.985 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.6578ms.
+2020-08-10 17:20:18.987 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:20:18.987 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 10.2608ms
+2020-08-10 17:20:18.990 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:20:18.991 +08:00 [INF] Request finished in 21.8956ms 200 application/json; charset=utf-8
+2020-08-10 17:20:47.152 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:20:47.154 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:20:47.155 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:20:47.156 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:20:47.158 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:20:47.162 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.852ms.
+2020-08-10 17:20:47.165 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:20:47.166 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 9.0138ms
+2020-08-10 17:20:47.168 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:20:47.169 +08:00 [INF] Request finished in 16.752ms 200 application/json; charset=utf-8
+2020-08-10 17:20:59.305 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:20:59.306 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:20:59.307 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:20:59.308 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:20:59.311 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:20:59.315 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.0456ms.
+2020-08-10 17:20:59.318 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:20:59.319 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 8.4809ms
+2020-08-10 17:20:59.320 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:20:59.321 +08:00 [INF] Request finished in 15.9606ms 200 application/json; charset=utf-8
+2020-08-10 17:21:26.768 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:21:26.769 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:21:26.770 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:21:26.771 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:21:26.774 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:21:26.777 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.8018ms.
+2020-08-10 17:21:26.780 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:21:26.781 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.9153ms
+2020-08-10 17:21:26.783 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:21:26.784 +08:00 [INF] Request finished in 16.3535ms 200 application/json; charset=utf-8
+2020-08-10 17:24:55.880 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:24:55.882 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:24:55.883 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:24:55.884 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:24:55.886 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:24:55.888 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.8709ms.
+2020-08-10 17:24:55.889 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:24:55.889 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 3.5546ms
+2020-08-10 17:24:55.893 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:24:55.894 +08:00 [INF] Request finished in 13.5928ms 200 application/json; charset=utf-8
+2020-08-10 17:26:15.488 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:26:15.492 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:26:15.493 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:15.493 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:26:15.495 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:26:15.499 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.9824ms.
+2020-08-10 17:26:15.500 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:26:15.502 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 7.1834ms
+2020-08-10 17:26:15.503 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:15.504 +08:00 [INF] Request finished in 16.451ms 200 application/json; charset=utf-8
+2020-08-10 17:26:20.112 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:26:20.113 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:26:20.114 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:20.115 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:26:20.117 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:26:20.119 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.7769ms.
+2020-08-10 17:26:20.120 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:26:20.121 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.7081ms
+2020-08-10 17:26:20.124 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:20.125 +08:00 [INF] Request finished in 13.2265ms 200 application/json; charset=utf-8
+2020-08-10 17:26:48.914 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:26:48.916 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:26:48.917 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:48.918 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:26:48.920 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:26:48.922 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.1575ms.
+2020-08-10 17:26:48.923 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:26:48.925 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 5.2082ms
+2020-08-10 17:26:48.927 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:48.928 +08:00 [INF] Request finished in 13.6875ms 200 application/json; charset=utf-8
+2020-08-10 17:26:48.929 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:26:48.930 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:26:48.931 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:48.932 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:26:48.935 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:26:48.937 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.7692ms.
+2020-08-10 17:26:48.939 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:26:48.939 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.9562ms
+2020-08-10 17:26:48.940 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:26:48.941 +08:00 [INF] Request finished in 12.5089ms 200 application/json; charset=utf-8
+2020-08-10 17:27:41.513 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:27:41.515 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:27:41.515 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:27:41.516 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:27:41.518 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:27:41.520 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.918ms.
+2020-08-10 17:27:41.521 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:27:41.522 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.8598ms
+2020-08-10 17:27:41.526 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:27:41.527 +08:00 [INF] Request finished in 13.6952ms 200 application/json; charset=utf-8
+2020-08-10 17:27:41.528 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:27:41.530 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:27:41.530 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:27:41.531 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:27:41.532 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:27:41.536 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.961ms.
+2020-08-10 17:27:41.537 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:27:41.538 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 6.3224ms
+2020-08-10 17:27:41.540 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:27:41.542 +08:00 [INF] Request finished in 13.9022ms 200 application/json; charset=utf-8
+2020-08-10 17:28:06.843 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:28:06.845 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:28:06.846 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:28:06.847 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:28:06.849 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:28:06.850 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.8695ms.
+2020-08-10 17:28:06.851 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:28:06.852 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.0772ms
+2020-08-10 17:28:06.857 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:28:06.858 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:28:06.858 +08:00 [INF] Request finished in 15.024ms 200 application/json; charset=utf-8
+2020-08-10 17:28:06.859 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:28:06.860 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:28:06.861 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:28:06.863 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:28:06.866 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.8698ms.
+2020-08-10 17:28:06.867 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:28:06.868 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 4.7449ms
+2020-08-10 17:28:06.870 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:28:06.871 +08:00 [INF] Request finished in 13.7576ms 200 application/json; charset=utf-8
+2020-08-10 17:41:08.856 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:41:08.858 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:41:08.859 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:41:08.859 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:41:08.865 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:41:08.870 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.6933ms.
+2020-08-10 17:41:08.871 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:41:08.872 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 11.1863ms
+2020-08-10 17:41:08.873 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:41:08.875 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/NavMenuManage  
+2020-08-10 17:41:08.876 +08:00 [INF] Request finished in 19.3952ms 200 application/json; charset=utf-8
+2020-08-10 17:41:08.877 +08:00 [INF] CORS policy execution successful.
+2020-08-10 17:41:08.878 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:41:08.879 +08:00 [INF] Route matched with {action = "Get", controller = "NavMenuManage"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[NetCoreBaseDemo.DBEntity.NavMenu] Get() on controller NetCoreBaseApiDemo.Controllers.NavMenuManageController (NetCoreBaseApiDemo).
+2020-08-10 17:41:08.881 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-10 17:41:08.884 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2048ms.
+2020-08-10 17:41:08.887 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCoreBaseDemo.DBEntity.NavMenu, NetCoreBaseDemo.DBEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-10 17:41:08.899 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo) in 18.4701ms
+2020-08-10 17:41:08.901 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.NavMenuManageController.Get (NetCoreBaseApiDemo)'
+2020-08-10 17:41:08.906 +08:00 [INF] Request finished in 30.928ms 200 application/json; charset=utf-8
+2020-08-10 17:41:37.959 +08:00 [INF] Application is shutting down...

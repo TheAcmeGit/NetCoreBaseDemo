@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 using Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NetCoreBaseDemo.Core.Extensions;
+using NetCoreBaseDemo.Core.Filters;
 using NetCoreBaseDemo.Dapper.Repository;
 using NetCoreBaseDemo.IRepository;
 
@@ -30,7 +33,12 @@ namespace NetCoreBaseApiDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
             var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
             var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
             services.AddSwagger(xmlPath);
@@ -38,7 +46,24 @@ namespace NetCoreBaseApiDemo
 
             services.AddRedis_Cus();
             services.AddMiniProfiler_Cus();
-            services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("all", builder =>
+                {
+                    builder.WithOrigins("http://192.168.16.27:9528").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                });
+            });
+            
+            
+
+            services.AddControllers(options=> {
+                options.Filters.Add<MyActionFilter>();
+            
+            }).ConfigureApiBehaviorOptions(options=> {
+                //关闭自带的模型验证
+                options.SuppressModelStateInvalidFilter = false;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,11 +73,13 @@ namespace NetCoreBaseApiDemo
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCookiePolicy();
             app.UseRouting();
             app.UseSwagger_Cus();
             app.UseMiniProfiler_Cus();
+            app.UseCors("all");
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
