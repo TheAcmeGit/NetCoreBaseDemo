@@ -6,9 +6,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NetCoreBaseDemo.Core.IServices;
-using NetCoreBaseDemo.DBEntity;
-using NetCoreBaseDemo.DTOEntity;
-using NetCoreBaseDemo.IRepository;
 using NetCoreBaseDemo.IService;
 using TheAcme.EntityModule.DbModels;
 
@@ -16,23 +13,21 @@ namespace NetCoreBaseApiDemo.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class SysAccountController : ControllerBase
+    public class SysDepartmentController : ControllerBase
     {
 
 
         private readonly ILogger<SysAccountController> _logger;
-        private readonly ISysAccountService _service;
+        private readonly ISysDepartmentService _service;
         private readonly IRedisMangerService _redisManger;
 
-        public SysAccountController(ILogger<SysAccountController> logger, ISysAccountService service, IRedisMangerService redisManger)
+        public SysDepartmentController(ILogger<SysAccountController> logger, ISysDepartmentService service, IRedisMangerService redisManger)
         {
             _logger = logger;
             _service = service;
             _redisManger = redisManger;
         }
-        [HttpGet("id")]
-        [ProducesResponseType(typeof(SysAccountDto), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [HttpGet("{id}")]
         public IActionResult Get(string id)
         {
             try
@@ -51,15 +46,14 @@ namespace NetCoreBaseApiDemo.Controllers
             {
                 throw ex;
             }
-           
+
         }
 
         [HttpPost]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Post(SysAccount entity)
+        public IActionResult Post(SysDepartment entity)
         {
-            entity.Id = Guid.NewGuid().ToString();
             return Ok(_service.Insert(entity));
         }
     }

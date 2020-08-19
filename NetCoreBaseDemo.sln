@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreBaseDemo.IService", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreBaseDemo.Service", "NetCoreBaseDemo.Service\NetCoreBaseDemo.Service.csproj", "{71C1B974-DBB9-49AD-BA2A-5385C3987EB3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.SimpleCRUD", "Dapper.SimpleCRUD\Dapper.SimpleCRUD.csproj", "{9A6A622A-2144-4115-863C-30B958EDD5C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{71C1B974-DBB9-49AD-BA2A-5385C3987EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71C1B974-DBB9-49AD-BA2A-5385C3987EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71C1B974-DBB9-49AD-BA2A-5385C3987EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6A622A-2144-4115-863C-30B958EDD5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6A622A-2144-4115-863C-30B958EDD5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6A622A-2144-4115-863C-30B958EDD5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6A622A-2144-4115-863C-30B958EDD5C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{E469332B-36E2-4D83-AAD1-0B634B639314} = {CFC27DCA-5E6C-4DF3-BE8F-714873D6E069}
 		{417E45B3-9374-449D-A105-AF37D04520F7} = {ACA2CC6D-8531-4F77-8ECD-03E85E329AE7}
 		{71C1B974-DBB9-49AD-BA2A-5385C3987EB3} = {ACA2CC6D-8531-4F77-8ECD-03E85E329AE7}
+		{9A6A622A-2144-4115-863C-30B958EDD5C3} = {B5174948-185D-46F6-9EF4-8B0A91235805}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E77DC44-4CE5-495B-8762-1B2CC83D4A60}

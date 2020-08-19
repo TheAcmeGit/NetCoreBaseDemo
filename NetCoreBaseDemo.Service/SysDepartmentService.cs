@@ -6,14 +6,14 @@ using TheAcme.EntityModule.DbModels;
 
 namespace NetCoreBaseDemo.Service
 {
-    public class SysAccountService : BaseService<string, SysAccount>, ISysAccountService
+    public class SysDepartmentService : BaseService<string, SysDepartment>, ISysDepartmentService
     {
         private readonly IMapper _mapper;
-        private readonly ISysAccountRepository _repository;
-        public SysAccountService(ISysAccountRepository repository,IMapper mapper)
+        private readonly ISysDepartmentRepository _repository;
+        public SysDepartmentService(ISysDepartmentRepository repository, IMapper mapper)
         {
             base._baseRepository = repository;
-                _repository = repository;
+            _repository = repository;
             _mapper = mapper;
         }
     }

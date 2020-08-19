@@ -9,6 +9,7 @@ namespace TheAcme.EntityModule.DbModels
     [Table("SysDepartments")]
     public class SysDepartment
     {
+        [Required]
         [ExplicitKey]
         public string Id { get; set; }
         [Required(ErrorMessage = "必须")]

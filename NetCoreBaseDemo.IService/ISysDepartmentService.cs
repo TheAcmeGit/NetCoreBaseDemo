@@ -3,7 +3,7 @@ using TheAcme.EntityModule.DbModels;
 
 namespace NetCoreBaseDemo.IService
 {
-    public interface ISysAccountService : IBaseService<string, SysAccount>
+    public interface ISysDepartmentService : IBaseService<string, SysDepartment>
     {
 
     }

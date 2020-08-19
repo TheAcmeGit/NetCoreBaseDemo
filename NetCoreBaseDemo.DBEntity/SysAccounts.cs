@@ -1,6 +1,7 @@
 ﻿using Dapper.Contrib.Extensions;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace TheAcme.EntityModule.DbModels
@@ -8,8 +9,9 @@ namespace TheAcme.EntityModule.DbModels
     [Table("SysAccounts")]
    public class SysAccount
     {
+        [Required]
         [ExplicitKey]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
         public string RealNmae { get; set; }

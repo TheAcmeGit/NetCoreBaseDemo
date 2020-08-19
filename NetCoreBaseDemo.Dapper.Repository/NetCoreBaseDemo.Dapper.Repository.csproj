@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,10 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.35" />
-    <PackageReference Include="Dapper.SimpleCRUD" Version="2.2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Dapper.SimpleCRUD\Dapper.SimpleCRUD.csproj" />
     <ProjectReference Include="..\NetCoreBaseDemo.DBEntity\NetCoreBaseDemo.DBEntity.csproj" />
     <ProjectReference Include="..\NetCoreBaseDemo.IRepository\NetCoreBaseDemo.IRepository.csproj" />
   </ItemGroup>
