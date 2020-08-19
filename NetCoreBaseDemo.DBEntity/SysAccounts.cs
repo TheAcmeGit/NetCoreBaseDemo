@@ -5,7 +5,8 @@ using System.Text;
 
 namespace TheAcme.EntityModule.DbModels
 {
-   public class SysAccounts
+    [Table("SysAccounts")]
+   public class SysAccount
     {
         [ExplicitKey]
         public string Id { get; set; }

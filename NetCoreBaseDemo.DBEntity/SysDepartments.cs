@@ -7,7 +7,7 @@ using System.Text;
 namespace TheAcme.EntityModule.DbModels
 {
     [Table("SysDepartments")]
-    public class SysDepartments
+    public class SysDepartment
     {
         [ExplicitKey]
         public string Id { get; set; }

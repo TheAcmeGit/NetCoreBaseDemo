@@ -6,7 +6,7 @@ using TheAcme.EntityModule.DbModels;
 
 namespace NetCoreBaseDemo.IRepository
 {
-    public interface ISysPermissionsRepository : IBaseRepository<string, SysPermissions>
+    public interface ISysPermissionsRepository : IBaseRepository<string, SysPermission>
     {
     }
 }

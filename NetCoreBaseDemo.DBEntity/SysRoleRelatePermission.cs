@@ -5,7 +5,8 @@ using System.Text;
 
 namespace TheAcme.EntityModule.DbModels
 {
-  public  class SysRoleRelatePermission
+    [Table("SysRoleRelatePermission")]
+    public  class SysRoleRelatePermission
     {
 
         [ExplicitKey]

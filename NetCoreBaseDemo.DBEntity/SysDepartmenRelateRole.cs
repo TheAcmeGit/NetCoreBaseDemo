@@ -5,6 +5,7 @@ using System.Text;
 
 namespace TheAcme.EntityModule.DbModels
 {
+    [Table("SysDepartmenRelateRole")]
     public class SysDepartmenRelateRole
     {
         [ExplicitKey]

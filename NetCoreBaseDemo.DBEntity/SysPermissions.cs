@@ -5,7 +5,8 @@ using System.Text;
 
 namespace TheAcme.EntityModule.DbModels
 {
-    public class SysPermissions
+    [Table("SysPermissions")]
+    public class SysPermission
     {
         [ExplicitKey]
         public string Id { get; set; }
