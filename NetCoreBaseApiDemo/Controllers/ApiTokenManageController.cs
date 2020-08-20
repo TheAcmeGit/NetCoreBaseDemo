@@ -35,12 +35,14 @@ namespace NetCoreBaseApiDemo.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Get(string id="")
         {
-            var array = Enumerable.Range(1, 10).Select(f => new TokenModel
+            var obj= new
             {
-                ID = f.ToString(),
-                UserName = $"Admin-{f}"
-            });
-            return Ok(array);
+                code = 20000,
+                introduction = "I am a super administrator",
+                avatar = "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif",
+                name = "Super Admin"
+            };
+            return Ok(obj);
         }
     }
 }

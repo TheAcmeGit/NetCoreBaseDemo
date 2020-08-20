@@ -46,6 +46,7 @@ namespace NetCoreBaseApiDemo
             services.AddAutoMapper_Cus();
             services.AddRedis_Cus();
             services.AddMiniProfiler_Cus();
+            services.AddApiBaseConfig();
 
             services.AddCors(options =>
             {

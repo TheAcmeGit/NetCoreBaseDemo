@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper.Internal;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NetCoreBaseDemo.Core.IServices;
 using NetCoreBaseDemo.DBEntity;
+using NetCoreBaseDemo.DBEntity.Base.RequestModel;
 using NetCoreBaseDemo.DTOEntity;
 using NetCoreBaseDemo.IRepository;
 using NetCoreBaseDemo.IService;
@@ -15,7 +17,7 @@ using TheAcme.EntityModule.DbModels;
 namespace NetCoreBaseApiDemo.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class SysAccountController : ControllerBase
     {
 
@@ -30,29 +32,52 @@ namespace NetCoreBaseApiDemo.Controllers
             _service = service;
             _redisManger = redisManger;
         }
-        [HttpGet("id")]
+        [HttpGet]
         [ProducesResponseType(typeof(SysAccountDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Get(string id)
+        public IActionResult Get(SysAccountRequest model)
         {
             try
             {
-                var data = _service.Get(id);
-                if (data == null)
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    return Ok(data);
-                }
+               
+                    return Ok(model);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-           
         }
+
+        //[HttpGet(Name ="Get1")]
+        //[ProducesResponseType(typeof(SysAccountRequest), StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        //public IActionResult Get1(SysAccountRequest request)
+        //{
+        //    try
+        //    {
+        //        return Ok(request);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+        //[HttpGet(Name ="Get2")]
+        //[ProducesResponseType(typeof(SysAccountDto), StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        //public IActionResult Get2()
+        //{
+        //    try
+        //    {
+        //        var data = _service.GetAll();
+        //        return Ok(data);
+               
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
 
         [HttpPost]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
@@ -62,5 +87,6 @@ namespace NetCoreBaseApiDemo.Controllers
             entity.Id = Guid.NewGuid().ToString();
             return Ok(_service.Insert(entity));
         }
+      
     }
 }

@@ -2581,3 +2581,1466 @@ Error Number:547,State:0,Class:16
 2020-08-19 14:30:00.468 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
 2020-08-19 14:30:00.470 +08:00 [INF] Request finished in 81.5486ms 200 application/json; charset=utf-8
 2020-08-19 14:31:15.356 +08:00 [INF] Application is shutting down...
+2020-08-19 15:13:43.704 +08:00 [INF] 程序启动
+2020-08-19 15:13:45.386 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:13:45.981 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:13:45.982 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:13:45.982 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:13:45.983 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:13:48.175 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:13:49.385 +08:00 [INF] Request finished in 1202.9247ms 200 text/html;charset=utf-8
+2020-08-19 15:13:49.875 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:13:50.260 +08:00 [INF] Request finished in 385.0596ms 200 application/json;charset=utf-8
+2020-08-19 15:14:05.574 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/SysAccount/id?id=ddd  
+2020-08-19 15:14:06.410 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 15:14:06.512 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 15:14:08.203 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 15:14:08.896 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 2378.8284ms
+2020-08-19 15:14:08.909 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 15:14:08.923 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): 列名 'SysDepartmentId' 无效。
+   at NetCoreBaseApiDemo.Controllers.SysAccountController.Get(String id) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo\Controllers\SysAccountController.cs:line 52
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:393e32ad-41cf-4725-86f2-f0a8beed54c8
+Error Number:207,State:1,Class:16
+2020-08-19 15:14:09.375 +08:00 [INF] Request finished in 3801.1631ms 500 text/plain
+2020-08-19 15:14:25.863 +08:00 [INF] Application is shutting down...
+2020-08-19 15:23:37.755 +08:00 [INF] 程序启动
+2020-08-19 15:23:40.283 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:23:40.817 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:23:40.819 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:23:40.819 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:23:40.820 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:23:43.008 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:23:43.451 +08:00 [INF] Request finished in 447.9189ms 200 text/html;charset=utf-8
+2020-08-19 15:23:44.548 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:23:45.192 +08:00 [INF] Request finished in 644.063ms 200 application/json;charset=utf-8
+2020-08-19 15:23:50.913 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 15:23:51.267 +08:00 [INF] CORS policy execution failed.
+2020-08-19 15:23:51.268 +08:00 [INF] Request origin http://localhost:9528 does not have permission to access the resource.
+2020-08-19 15:23:51.330 +08:00 [INF] Request finished in 417.1962ms 204 
+2020-08-19 15:46:24.519 +08:00 [INF] 程序启动
+2020-08-19 15:46:24.814 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:46:24.977 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:46:24.977 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:46:24.978 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:46:24.978 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:46:25.642 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:46:25.790 +08:00 [INF] Request finished in 151.0621ms 200 text/html;charset=utf-8
+2020-08-19 15:46:25.912 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:46:26.032 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "POST api/SysAccount" for actions - NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo),NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 15:46:26.378 +08:00 [INF] Request finished in 466.4939ms 500 text/plain
+2020-08-19 15:46:29.581 +08:00 [INF] Application is shutting down...
+2020-08-19 15:47:41.520 +08:00 [INF] 程序启动
+2020-08-19 15:47:41.766 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:47:41.937 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:47:41.937 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:47:41.938 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:47:41.938 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:47:42.547 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:47:42.692 +08:00 [INF] Request finished in 151.8071ms 200 text/html;charset=utf-8
+2020-08-19 15:47:42.817 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:47:42.913 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "POST api/SysAccount" for actions - NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo),NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 15:47:42.933 +08:00 [INF] Request finished in 115.9762ms 500 text/plain
+2020-08-19 15:47:47.036 +08:00 [INF] Application is shutting down...
+2020-08-19 15:48:03.209 +08:00 [INF] 程序启动
+2020-08-19 15:48:03.466 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:48:03.631 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:48:03.632 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:48:03.632 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:48:03.632 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:48:04.258 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:48:04.366 +08:00 [INF] Request finished in 112.3685ms 200 text/html;charset=utf-8
+2020-08-19 15:48:04.470 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:48:04.574 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "POST api/SysAccount" for actions - NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo),NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 15:48:04.599 +08:00 [INF] Request finished in 128.7787ms 500 text/plain
+2020-08-19 15:48:41.868 +08:00 [INF] Application is shutting down...
+2020-08-19 15:49:06.179 +08:00 [INF] 程序启动
+2020-08-19 15:49:06.426 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:49:06.588 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:49:06.589 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:49:06.590 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:49:06.590 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:49:07.192 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:49:07.349 +08:00 [INF] Request finished in 160.85ms 200 text/html;charset=utf-8
+2020-08-19 15:49:07.486 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:49:07.640 +08:00 [INF] Request finished in 154.2772ms 200 application/json;charset=utf-8
+2020-08-19 15:49:19.179 +08:00 [INF] Application is shutting down...
+2020-08-19 15:49:41.763 +08:00 [INF] 程序启动
+2020-08-19 15:49:42.046 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:49:42.212 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:49:42.212 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:49:42.213 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:49:42.213 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:49:42.779 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:49:42.928 +08:00 [INF] Request finished in 151.5613ms 200 text/html;charset=utf-8
+2020-08-19 15:49:43.057 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:49:43.207 +08:00 [INF] Request finished in 150.7109ms 200 application/json;charset=utf-8
+2020-08-19 15:49:57.148 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/SysAccount/load  0
+2020-08-19 15:49:57.174 +08:00 [INF] CORS policy execution failed.
+2020-08-19 15:49:57.175 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 15:49:57.766 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 15:49:57.903 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 15:49:59.407 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 15:49:59.430 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkResult in 16.7617ms.
+2020-08-19 15:49:59.448 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 1539.6052ms
+2020-08-19 15:49:59.456 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 15:49:59.458 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetCoreBaseDemo.Core.Filters.MyActionFilter.OnActionExecuted(ActionExecutedContext context) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Filters\3.MyActionFilter.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 15:49:59.654 +08:00 [INF] Request finished in 2506.651ms 500 text/plain
+2020-08-19 15:50:09.012 +08:00 [INF] Application is shutting down...
+2020-08-19 15:56:09.398 +08:00 [INF] 程序启动
+2020-08-19 15:56:09.645 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 15:56:09.814 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 15:56:09.815 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 15:56:09.815 +08:00 [INF] Hosting environment: Development
+2020-08-19 15:56:09.816 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 15:56:10.302 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 15:56:10.463 +08:00 [INF] Request finished in 164.3619ms 200 text/html;charset=utf-8
+2020-08-19 15:56:10.604 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 15:56:10.767 +08:00 [INF] Request finished in 162.8528ms 200 application/json;charset=utf-8
+2020-08-19 15:56:15.899 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/SysAccount/load  0
+2020-08-19 15:56:15.934 +08:00 [INF] CORS policy execution failed.
+2020-08-19 15:56:15.935 +08:00 [INF] Request origin http://localhost:5000 does not have permission to access the resource.
+2020-08-19 15:56:15.964 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 15:56:15.993 +08:00 [INF] Route matched with {action = "Post", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 15:56:16.475 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 15:56:18.049 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1567.0466ms.
+2020-08-19 15:56:18.056 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 15:56:18.093 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo) in 2094.1467ms
+2020-08-19 15:56:18.095 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Post (NetCoreBaseApiDemo)'
+2020-08-19 15:56:18.110 +08:00 [INF] Request finished in 2211.3395ms 200 application/json; charset=utf-8
+2020-08-19 16:01:07.920 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 16:01:08.729 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:01:08.798 +08:00 [INF] Request finished in 1004.6411ms 204 
+2020-08-19 16:01:08.895 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 16:01:08.897 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:01:09.046 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:01:10.404 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:01:10.417 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:01:20.285 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9812.2826ms.
+2020-08-19 16:01:20.306 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:01:20.516 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 10109.1525ms
+2020-08-19 16:01:20.518 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:01:20.519 +08:00 [INF] Request finished in 11624.8214ms 200 application/json; charset=utf-8
+2020-08-19 16:01:29.887 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 16:01:29.890 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:01:29.892 +08:00 [INF] Request finished in 5.9597ms 204 
+2020-08-19 16:01:29.897 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 16:01:29.900 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:01:29.903 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:01:29.935 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:01:29.937 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:01:29.939 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.7501ms.
+2020-08-19 16:01:29.940 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:01:29.941 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 4.8795ms
+2020-08-19 16:01:29.943 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:01:29.944 +08:00 [INF] Request finished in 47.6236ms 200 application/json; charset=utf-8
+2020-08-19 16:01:44.829 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Test  
+2020-08-19 16:01:44.860 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:01:44.862 +08:00 [INF] Request finished in 33.2481ms 404 
+2020-08-19 16:01:59.701 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 16:01:59.705 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:01:59.707 +08:00 [INF] Request finished in 5.4297ms 204 
+2020-08-19 16:01:59.710 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 16:01:59.712 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:01:59.713 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:01:59.715 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:01:59.717 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:01:59.719 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6329ms.
+2020-08-19 16:01:59.722 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:01:59.723 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 6.0165ms
+2020-08-19 16:01:59.726 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:01:59.727 +08:00 [INF] Request finished in 16.6597ms 200 application/json; charset=utf-8
+2020-08-19 16:02:12.717 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Test  
+2020-08-19 16:02:12.730 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:02:12.736 +08:00 [INF] Request finished in 19.3978ms 404 
+2020-08-19 16:08:06.147 +08:00 [INF] Application is shutting down...
+2020-08-19 16:09:04.231 +08:00 [INF] 程序启动
+2020-08-19 16:09:04.967 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 16:09:05.532 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 16:09:05.534 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 16:09:05.535 +08:00 [INF] Hosting environment: Development
+2020-08-19 16:09:05.535 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 16:09:14.221 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 16:09:16.668 +08:00 [INF] Request finished in 2448.3984ms 200 text/html;charset=utf-8
+2020-08-19 16:09:17.618 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 16:09:18.882 +08:00 [INF] Request finished in 1263.9393ms 200 application/json;charset=utf-8
+2020-08-19 16:09:24.446 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:09:25.515 +08:00 [INF] Authorization failed.
+2020-08-19 16:09:25.520 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 16:09:25.631 +08:00 [INF] Request finished in 1186.0069ms 401 
+2020-08-19 16:10:12.023 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 16:10:12.028 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:10:12.030 +08:00 [INF] Request finished in 7.2276ms 204 
+2020-08-19 16:10:12.056 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 16:10:12.058 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:10:12.119 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:10:12.347 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:10:12.356 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:10:12.979 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 559.0598ms.
+2020-08-19 16:10:12.984 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:10:13.032 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 679.0329ms
+2020-08-19 16:10:13.034 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:10:13.035 +08:00 [INF] Request finished in 978.6831ms 200 application/json; charset=utf-8
+2020-08-19 16:10:13.056 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:10:13.057 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:10:13.059 +08:00 [INF] Authorization failed.
+2020-08-19 16:10:13.060 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 16:10:13.060 +08:00 [INF] Request finished in 3.9951ms 401 
+2020-08-19 16:10:24.630 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 16:10:24.634 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:10:24.636 +08:00 [INF] Request finished in 6.7925ms 204 
+2020-08-19 16:10:24.641 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 16:10:24.643 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:10:24.643 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:10:24.644 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:10:24.645 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:10:24.646 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4769ms.
+2020-08-19 16:10:24.648 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:10:24.649 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 3.6048ms
+2020-08-19 16:10:24.650 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:10:24.651 +08:00 [INF] Request finished in 10.1516ms 200 application/json; charset=utf-8
+2020-08-19 16:10:29.090 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:10:29.095 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:10:29.098 +08:00 [INF] Authorization failed.
+2020-08-19 16:10:29.100 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 16:10:29.110 +08:00 [INF] Request finished in 19.436ms 401 
+2020-08-19 16:14:07.532 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 16:14:07.537 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:14:07.539 +08:00 [INF] Request finished in 6.9642ms 204 
+2020-08-19 16:14:07.543 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 16:14:07.545 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:14:07.547 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:14:07.549 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:14:07.551 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:14:07.552 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.0534ms.
+2020-08-19 16:14:07.554 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:14:07.556 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 5.7074ms
+2020-08-19 16:14:07.558 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:14:07.559 +08:00 [INF] Request finished in 16.638ms 200 application/json; charset=utf-8
+2020-08-19 16:14:15.458 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:14:15.465 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:14:15.468 +08:00 [INF] Authorization failed.
+2020-08-19 16:14:15.469 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 16:14:15.470 +08:00 [INF] Request finished in 11.7719ms 401 
+2020-08-19 16:14:58.781 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 16:14:58.795 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:14:58.802 +08:00 [INF] Request finished in 20.0775ms 204 
+2020-08-19 16:14:58.808 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 16:14:58.810 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:14:58.812 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:14:58.814 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:14:58.815 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:14:58.817 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.7347ms.
+2020-08-19 16:14:58.818 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:14:58.819 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 3.7719ms
+2020-08-19 16:14:58.821 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:14:58.822 +08:00 [INF] Request finished in 13.2302ms 200 application/json; charset=utf-8
+2020-08-19 16:14:58.833 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:14:58.837 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:14:58.839 +08:00 [INF] Request finished in 5.3542ms 204 
+2020-08-19 16:14:58.841 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:14:58.842 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:14:58.956 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:14:58.966 +08:00 [INF] Authorization was successful.
+2020-08-19 16:14:58.967 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:14:58.996 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:14:59.044 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:14:59.047 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6346ms.
+2020-08-19 16:14:59.049 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:14:59.052 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 53.4297ms
+2020-08-19 16:14:59.053 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:14:59.055 +08:00 [INF] Request finished in 214.7519ms 200 application/json; charset=utf-8
+2020-08-19 16:15:06.326 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:15:06.328 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:15:06.329 +08:00 [INF] Request finished in 3.3465ms 204 
+2020-08-19 16:15:06.331 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:15:06.332 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:15:06.334 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:15:06.335 +08:00 [INF] Authorization was successful.
+2020-08-19 16:15:06.336 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:15:06.337 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:15:06.339 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:15:06.340 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.027ms.
+2020-08-19 16:15:06.341 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:15:06.342 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 3.6875ms
+2020-08-19 16:15:06.343 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:15:06.344 +08:00 [INF] Request finished in 13.286ms 200 application/json; charset=utf-8
+2020-08-19 16:15:10.463 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:15:10.466 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:15:10.468 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:15:10.469 +08:00 [INF] Authorization was successful.
+2020-08-19 16:15:10.469 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:15:10.470 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:15:10.472 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:15:10.473 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.021ms.
+2020-08-19 16:15:10.474 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:15:10.475 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 3.7228ms
+2020-08-19 16:15:10.476 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:15:10.477 +08:00 [INF] Request finished in 14.4647ms 200 application/json; charset=utf-8
+2020-08-19 16:15:11.062 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:15:11.066 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:15:11.068 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:15:11.069 +08:00 [INF] Authorization was successful.
+2020-08-19 16:15:11.070 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:15:11.071 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:15:11.073 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:15:11.074 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.023ms.
+2020-08-19 16:15:11.075 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:15:11.076 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 4.0698ms
+2020-08-19 16:15:11.079 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:15:11.080 +08:00 [INF] Request finished in 18.098ms 200 application/json; charset=utf-8
+2020-08-19 16:15:29.292 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/vue-admin-template/table/list  
+2020-08-19 16:15:29.293 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:15:29.311 +08:00 [INF] Request finished in 19.4591ms 204 
+2020-08-19 16:15:29.327 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/vue-admin-template/table/list  
+2020-08-19 16:15:29.328 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:15:29.331 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:15:29.332 +08:00 [INF] Request finished in 5.0246ms 404 
+2020-08-19 16:20:47.453 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/SysAccount/2  
+2020-08-19 16:20:47.455 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:20:47.481 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:20:51.596 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:20:52.188 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 589.87ms.
+2020-08-19 16:20:52.210 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 4727.1178ms
+2020-08-19 16:20:52.217 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:20:52.288 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NetCoreBaseDemo.Core.Filters.MyActionFilter.OnActionExecuted(ActionExecutedContext context) in F:\TestDemo\NetCoreBaseDemo\NetCoreBaseDemo.Core\Filters\3.MyActionFilter.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 105
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 16:20:52.731 +08:00 [INF] Request finished in 5278.4981ms 500 text/plain
+2020-08-19 16:21:55.295 +08:00 [INF] Application is shutting down...
+2020-08-19 16:22:23.426 +08:00 [INF] 程序启动
+2020-08-19 16:22:23.892 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 16:22:24.178 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 16:22:24.179 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 16:22:24.180 +08:00 [INF] Hosting environment: Development
+2020-08-19 16:22:24.180 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 16:22:25.119 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 16:22:26.254 +08:00 [INF] Request finished in 1139.5177ms 200 text/html;charset=utf-8
+2020-08-19 16:22:27.375 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 16:22:27.776 +08:00 [INF] Request finished in 401.5583ms 200 application/json;charset=utf-8
+2020-08-19 16:22:34.692 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/apitokenmanage  
+2020-08-19 16:22:34.847 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:22:34.875 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:22:34.882 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:22:35.068 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 176.1609ms.
+2020-08-19 16:22:35.074 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:22:35.083 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 201.5884ms
+2020-08-19 16:22:35.084 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:22:35.093 +08:00 [INF] Request finished in 401.142ms 200 application/json; charset=utf-8
+2020-08-19 16:31:28.180 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:31:28.199 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:31:28.203 +08:00 [INF] Request finished in 23.454ms 204 
+2020-08-19 16:31:28.221 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:31:28.224 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:31:28.844 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:31:28.880 +08:00 [INF] Authorization was successful.
+2020-08-19 16:31:28.881 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:31:29.489 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:31:29.803 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:31:29.805 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3221ms.
+2020-08-19 16:31:29.807 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:31:29.890 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 261.0335ms
+2020-08-19 16:31:29.893 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:31:29.895 +08:00 [INF] Request finished in 1673.397ms 200 application/json; charset=utf-8
+2020-08-19 16:32:31.107 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:32:31.110 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:32:31.112 +08:00 [INF] Request finished in 5.7739ms 204 
+2020-08-19 16:32:31.114 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:32:31.116 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:32:31.165 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:32:31.166 +08:00 [INF] Authorization was successful.
+2020-08-19 16:32:31.167 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:32:31.168 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:32:31.169 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:32:31.170 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0439ms.
+2020-08-19 16:32:31.175 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:32:31.176 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 6.967ms
+2020-08-19 16:32:31.177 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:32:31.179 +08:00 [INF] Request finished in 64.5308ms 200 application/json; charset=utf-8
+2020-08-19 16:37:15.752 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/api/sysaccount  
+2020-08-19 16:37:15.758 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:37:15.759 +08:00 [INF] Request finished in 7.2185ms 204 
+2020-08-19 16:37:15.761 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/api/sysaccount  
+2020-08-19 16:37:15.763 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:37:15.766 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:37:15.767 +08:00 [INF] Request finished in 6.2725ms 404 
+2020-08-19 16:41:24.455 +08:00 [INF] Application is shutting down...
+2020-08-19 16:42:25.302 +08:00 [INF] 程序启动
+2020-08-19 16:42:26.835 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 16:42:27.197 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 16:42:27.198 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 16:42:27.198 +08:00 [INF] Hosting environment: Development
+2020-08-19 16:42:27.198 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 16:42:28.629 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 16:42:28.711 +08:00 [INF] Request finished in 84.9165ms 200 text/html;charset=utf-8
+2020-08-19 16:42:30.801 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 16:42:30.898 +08:00 [INF] Request finished in 97.3624ms 200 application/json;charset=utf-8
+2020-08-19 16:42:37.228 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:42:38.112 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:42:38.209 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:42:43.287 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:42:44.219 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 923.5946ms.
+2020-08-19 16:42:44.226 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:42:44.258 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 6042.8547ms
+2020-08-19 16:42:44.260 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:42:44.302 +08:00 [INF] Request finished in 7074.4449ms 200 application/json; charset=utf-8
+2020-08-19 16:43:26.348 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/api/sysaccount  
+2020-08-19 16:43:26.356 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:43:26.360 +08:00 [INF] Request finished in 11.9036ms 204 
+2020-08-19 16:43:26.363 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/api/sysaccount  
+2020-08-19 16:43:26.364 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:43:26.914 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:43:26.961 +08:00 [INF] Request finished in 598.3994ms 404 
+2020-08-19 16:43:38.583 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/api/sysaccount  
+2020-08-19 16:43:38.588 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:43:38.593 +08:00 [INF] Request finished in 7.7077ms 204 
+2020-08-19 16:43:38.595 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/api/sysaccount  
+2020-08-19 16:43:38.598 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:43:38.599 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:43:38.600 +08:00 [INF] Request finished in 4.197ms 404 
+2020-08-19 16:44:10.592 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:44:10.597 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:44:10.600 +08:00 [INF] Request finished in 8.1114ms 204 
+2020-08-19 16:44:10.603 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:44:10.606 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:44:10.608 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:44:10.609 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:44:10.611 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:44:10.666 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:44:10.673 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.3026ms.
+2020-08-19 16:44:10.675 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:44:10.681 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 66.7178ms
+2020-08-19 16:44:10.682 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:44:10.683 +08:00 [INF] Request finished in 80.5456ms 200 application/json; charset=utf-8
+2020-08-19 16:44:39.509 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:44:39.514 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:44:39.515 +08:00 [INF] Request finished in 6.7597ms 204 
+2020-08-19 16:44:39.517 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:44:39.519 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:44:39.562 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:44:39.698 +08:00 [INF] Authorization was successful.
+2020-08-19 16:44:39.700 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:44:39.843 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:44:39.940 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:44:39.942 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5231ms.
+2020-08-19 16:44:39.943 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:44:39.946 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 100.2901ms
+2020-08-19 16:44:39.948 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:44:39.950 +08:00 [INF] Request finished in 432.9498ms 200 application/json; charset=utf-8
+2020-08-19 16:44:40.112 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:44:40.114 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:44:40.114 +08:00 [INF] Request finished in 2.4627ms 204 
+2020-08-19 16:44:40.133 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:44:40.134 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:44:40.135 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:44:40.136 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:44:40.136 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:44:40.139 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:44:40.145 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.9522ms.
+2020-08-19 16:44:40.148 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:44:40.150 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 11.6111ms
+2020-08-19 16:44:40.152 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:44:40.153 +08:00 [INF] Request finished in 20.0843ms 200 application/json; charset=utf-8
+2020-08-19 16:44:44.613 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:44:44.618 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:44:44.620 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:44:44.623 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:44:44.625 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:44:44.630 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:44:44.640 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.8299ms.
+2020-08-19 16:44:44.647 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:44:44.649 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 22.0627ms
+2020-08-19 16:44:44.654 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:44:44.656 +08:00 [INF] Request finished in 43.4508ms 200 application/json; charset=utf-8
+2020-08-19 16:45:13.496 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:45:13.502 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:45:13.505 +08:00 [INF] Request finished in 8.7492ms 204 
+2020-08-19 16:45:13.514 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:45:13.516 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:45:13.524 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:45:13.526 +08:00 [INF] Authorization was successful.
+2020-08-19 16:45:13.529 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:45:13.532 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:45:13.536 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:45:13.540 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.051ms.
+2020-08-19 16:45:13.542 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:45:13.544 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 9.6504ms
+2020-08-19 16:45:13.547 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:45:13.550 +08:00 [INF] Request finished in 35.7379ms 200 application/json; charset=utf-8
+2020-08-19 16:45:13.809 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:45:13.847 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:45:13.848 +08:00 [INF] Request finished in 39.0043ms 204 
+2020-08-19 16:45:13.851 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:45:13.852 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:45:13.855 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:45:13.859 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:45:13.861 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:45:13.865 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:45:13.873 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.9007ms.
+2020-08-19 16:45:13.874 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:45:13.876 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 12.5479ms
+2020-08-19 16:45:13.882 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:45:13.883 +08:00 [INF] Request finished in 32.8535ms 200 application/json; charset=utf-8
+2020-08-19 16:45:46.964 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:45:46.970 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:45:46.978 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:45:46.982 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:45:46.990 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.4639ms.
+2020-08-19 16:45:46.992 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:45:46.993 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 12.7173ms
+2020-08-19 16:45:46.995 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:45:46.996 +08:00 [INF] Request finished in 32.7298ms 200 application/json; charset=utf-8
+2020-08-19 16:48:15.646 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:48:15.648 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:48:15.651 +08:00 [INF] Request finished in 4.5166ms 204 
+2020-08-19 16:48:15.653 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:48:15.654 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:48:15.656 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:48:15.658 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:48:15.659 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:48:15.662 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:48:15.670 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.9267ms.
+2020-08-19 16:48:15.672 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:48:15.673 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 12.1077ms
+2020-08-19 16:48:15.674 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:48:15.675 +08:00 [INF] Request finished in 21.8696ms 200 application/json; charset=utf-8
+2020-08-19 16:50:42.549 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:50:42.556 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:50:42.560 +08:00 [INF] Request finished in 11.3194ms 204 
+2020-08-19 16:50:42.567 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:50:42.570 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:50:42.572 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:50:42.573 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:50:42.574 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:50:42.578 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:50:42.583 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.9211ms.
+2020-08-19 16:50:42.586 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:50:42.587 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 10.8826ms
+2020-08-19 16:50:42.594 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:50:42.595 +08:00 [INF] Request finished in 27.2954ms 200 application/json; charset=utf-8
+2020-08-19 16:51:07.020 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:51:07.023 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:51:07.025 +08:00 [INF] Request finished in 4.6238ms 204 
+2020-08-19 16:51:07.027 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:51:07.029 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:51:07.032 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:51:07.033 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:51:07.034 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:51:07.037 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:51:07.042 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.4903ms.
+2020-08-19 16:51:07.044 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:51:07.046 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 10.1265ms
+2020-08-19 16:51:07.047 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:51:07.048 +08:00 [INF] Request finished in 21.4748ms 200 application/json; charset=utf-8
+2020-08-19 16:53:28.149 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:53:28.152 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:28.154 +08:00 [INF] Request finished in 4.8707ms 204 
+2020-08-19 16:53:28.157 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:53:28.161 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:28.162 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:53:28.163 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:53:28.165 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:53:28.168 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:53:28.172 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.3694ms.
+2020-08-19 16:53:28.174 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:53:28.175 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 7.9315ms
+2020-08-19 16:53:28.176 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:53:28.178 +08:00 [INF] Request finished in 20.4031ms 200 application/json; charset=utf-8
+2020-08-19 16:53:44.495 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:53:44.509 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:44.529 +08:00 [INF] Request finished in 34.1935ms 204 
+2020-08-19 16:53:44.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:53:44.539 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:44.543 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:53:44.603 +08:00 [INF] Authorization was successful.
+2020-08-19 16:53:44.604 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:53:44.605 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:53:44.609 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:53:44.612 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0558ms.
+2020-08-19 16:53:44.613 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:53:44.614 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 7.5406ms
+2020-08-19 16:53:44.616 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:53:44.617 +08:00 [INF] Request finished in 81.7085ms 200 application/json; charset=utf-8
+2020-08-19 16:53:44.723 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:53:44.726 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:44.727 +08:00 [INF] Request finished in 4.0926ms 204 
+2020-08-19 16:53:44.734 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:53:44.736 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:44.739 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:53:44.740 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:53:44.742 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:53:44.747 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:53:44.752 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.1723ms.
+2020-08-19 16:53:44.759 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:53:44.760 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 14.0193ms
+2020-08-19 16:53:44.761 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:53:44.763 +08:00 [INF] Request finished in 29.1135ms 200 application/json; charset=utf-8
+2020-08-19 16:53:51.187 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:53:51.193 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:51.195 +08:00 [INF] Request finished in 7.9523ms 204 
+2020-08-19 16:53:51.212 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 16:53:51.213 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:51.215 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:53:51.217 +08:00 [INF] Authorization was successful.
+2020-08-19 16:53:51.219 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:53:51.220 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 16:53:51.222 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:53:51.223 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0182ms.
+2020-08-19 16:53:51.225 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:53:51.227 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 5.6102ms
+2020-08-19 16:53:51.230 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 16:53:51.230 +08:00 [INF] Request finished in 18.7107ms 200 application/json; charset=utf-8
+2020-08-19 16:53:51.344 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:53:51.346 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:51.347 +08:00 [INF] Request finished in 2.8017ms 204 
+2020-08-19 16:53:51.349 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:53:51.350 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:53:51.352 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:53:51.352 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:53:51.353 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:53:51.357 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:53:51.362 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.1238ms.
+2020-08-19 16:53:51.363 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:53:51.369 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 13.0272ms
+2020-08-19 16:53:51.370 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:53:51.371 +08:00 [INF] Request finished in 21.4024ms 200 application/json; charset=utf-8
+2020-08-19 16:54:09.311 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:54:09.313 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:54:09.315 +08:00 [INF] Request finished in 4.161ms 204 
+2020-08-19 16:54:09.318 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 16:54:09.319 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:54:09.322 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:54:09.322 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:54:09.323 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:54:09.327 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:54:09.333 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.1404ms.
+2020-08-19 16:54:09.335 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:54:09.336 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 10.6095ms
+2020-08-19 16:54:09.337 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:54:09.338 +08:00 [INF] Request finished in 19.8252ms 200 application/json; charset=utf-8
+2020-08-19 16:59:37.603 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:59:37.606 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:59:37.609 +08:00 [INF] Request finished in 5.4143ms 204 
+2020-08-19 16:59:37.612 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 16:59:37.614 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:59:37.617 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:59:37.618 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:59:37.619 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:59:37.660 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:59:37.664 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.2431ms.
+2020-08-19 16:59:37.665 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:59:37.667 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 46.3731ms
+2020-08-19 16:59:37.668 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:59:37.674 +08:00 [INF] Request finished in 61.5511ms 200 application/json; charset=utf-8
+2020-08-19 16:59:52.179 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 16:59:52.184 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:59:52.185 +08:00 [INF] Request finished in 6.0917ms 204 
+2020-08-19 16:59:52.194 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 16:59:52.195 +08:00 [INF] CORS policy execution successful.
+2020-08-19 16:59:52.196 +08:00 [INF] Successfully validated the token.
+2020-08-19 16:59:52.197 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:59:52.197 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 16:59:52.200 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 16:59:52.207 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.4189ms.
+2020-08-19 16:59:52.208 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 16:59:52.209 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 10.9787ms
+2020-08-19 16:59:52.218 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 16:59:52.219 +08:00 [INF] Request finished in 25.5432ms 200 application/json; charset=utf-8
+2020-08-19 17:02:33.209 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/vue-admin-template/table/list  
+2020-08-19 17:02:33.210 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:02:33.238 +08:00 [INF] Request finished in 29.4845ms 204 
+2020-08-19 17:02:33.390 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/vue-admin-template/table/list  
+2020-08-19 17:02:33.391 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:02:33.392 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:02:33.393 +08:00 [INF] Request finished in 3.5632ms 404 
+2020-08-19 17:02:36.681 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:02:36.682 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:02:36.684 +08:00 [INF] Request finished in 2.2181ms 204 
+2020-08-19 17:02:36.686 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:02:36.688 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:02:36.688 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:02:36.689 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:02:36.690 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:02:36.694 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:02:36.706 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.0066ms.
+2020-08-19 17:02:36.708 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:02:36.709 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 15.3436ms
+2020-08-19 17:02:36.709 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:02:36.710 +08:00 [INF] Request finished in 23.7704ms 200 application/json; charset=utf-8
+2020-08-19 17:03:17.130 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:03:17.131 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:03:17.132 +08:00 [INF] Request finished in 2.0054ms 204 
+2020-08-19 17:03:17.135 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:03:17.136 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:03:17.137 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:03:17.137 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:03:17.139 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:03:17.142 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:03:17.146 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.9069ms.
+2020-08-19 17:03:17.148 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:03:17.148 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 6.9414ms
+2020-08-19 17:03:17.149 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:03:17.154 +08:00 [INF] Request finished in 18.7726ms 200 application/json; charset=utf-8
+2020-08-19 17:08:24.469 +08:00 [INF] Application is shutting down...
+2020-08-19 17:09:14.874 +08:00 [INF] 程序启动
+2020-08-19 17:09:15.714 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:09:16.083 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:09:16.084 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:09:16.084 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:09:16.085 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:09:19.150 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:09:20.560 +08:00 [INF] Request finished in 1409.3176ms 200 text/html;charset=utf-8
+2020-08-19 17:09:21.658 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:09:22.082 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/sysaccount" for actions - NetCoreBaseApiDemo.Controllers.SysAccountController.Get1 (NetCoreBaseApiDemo),NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 17:09:23.745 +08:00 [INF] Request finished in 2087.4647ms 500 text/plain
+2020-08-19 17:09:28.016 +08:00 [INF] Application is shutting down...
+2020-08-19 17:10:01.121 +08:00 [INF] 程序启动
+2020-08-19 17:10:01.370 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:10:01.568 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:10:01.569 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:10:01.569 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:10:01.569 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:10:02.236 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:10:02.408 +08:00 [INF] Request finished in 177.323ms 200 text/html;charset=utf-8
+2020-08-19 17:10:02.609 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:10:02.695 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/sysaccount" for actions - NetCoreBaseApiDemo.Controllers.SysAccountController.Get1 (NetCoreBaseApiDemo),NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 17:10:02.726 +08:00 [INF] Request finished in 117.3196ms 500 text/plain
+2020-08-19 17:10:59.570 +08:00 [INF] 程序启动
+2020-08-19 17:10:59.867 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:11:00.032 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:11:00.033 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:11:00.033 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:11:00.034 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:11:00.678 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:11:00.790 +08:00 [INF] Request finished in 114.2522ms 200 text/html;charset=utf-8
+2020-08-19 17:11:00.937 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:11:01.182 +08:00 [INF] Request finished in 245.0746ms 200 application/json;charset=utf-8
+2020-08-19 17:11:08.057 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/111  
+2020-08-19 17:11:08.763 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:11:08.836 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:11:10.435 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:11:10.443 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4171ms.
+2020-08-19 17:11:10.448 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:11:10.467 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 1624.5197ms
+2020-08-19 17:11:10.468 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:11:10.481 +08:00 [INF] Request finished in 2423.729ms 200 application/json; charset=utf-8
+2020-08-19 17:11:58.580 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:11:58.589 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:11:58.592 +08:00 [INF] Request finished in 11.8785ms 204 
+2020-08-19 17:11:58.650 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:11:58.652 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:12:02.320 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:12:02.367 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:12:02.372 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:12:02.385 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:12:06.673 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4286.4764ms.
+2020-08-19 17:12:06.676 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:12:06.824 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 4444.596ms
+2020-08-19 17:12:06.826 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:12:06.828 +08:00 [INF] Request finished in 8177.7951ms 200 application/json; charset=utf-8
+2020-08-19 17:12:07.104 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:12:07.107 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:12:07.109 +08:00 [INF] Request finished in 5.438ms 204 
+2020-08-19 17:12:07.112 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:12:07.113 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:12:07.116 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:12:07.117 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:12:07.119 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:12:07.121 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:12:07.127 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.8225ms.
+2020-08-19 17:12:07.129 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:12:07.130 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 9.7696ms
+2020-08-19 17:12:07.131 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:12:07.136 +08:00 [INF] Request finished in 24.7104ms 200 application/json; charset=utf-8
+2020-08-19 17:12:24.249 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:12:24.253 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:12:24.256 +08:00 [INF] Request finished in 7.2116ms 204 
+2020-08-19 17:12:24.259 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:12:24.261 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:12:24.263 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:12:24.265 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:12:24.266 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:12:24.311 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:12:24.315 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.3998ms.
+2020-08-19 17:12:24.317 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:12:24.319 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 50.979ms
+2020-08-19 17:12:24.320 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:12:24.325 +08:00 [INF] Request finished in 66.0794ms 200 application/json; charset=utf-8
+2020-08-19 17:13:09.250 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/1  
+2020-08-19 17:13:09.253 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:13:09.255 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:13:09.259 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:13:09.261 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0809ms.
+2020-08-19 17:13:09.263 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:13:09.265 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 8.0376ms
+2020-08-19 17:13:09.266 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:13:09.267 +08:00 [INF] Request finished in 17.5298ms 200 application/json; charset=utf-8
+2020-08-19 17:13:45.208 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount/:id  
+2020-08-19 17:13:45.211 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:13:45.213 +08:00 [INF] Request finished in 5.296ms 204 
+2020-08-19 17:13:45.216 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/:id application/json;charset=utf-8 
+2020-08-19 17:13:45.217 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:13:45.220 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:13:45.220 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:13:45.221 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:13:45.257 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:13:45.259 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0464ms.
+2020-08-19 17:13:45.260 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:13:45.261 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 38.3763ms
+2020-08-19 17:13:45.262 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:13:45.334 +08:00 [INF] Request finished in 118.306ms 200 application/json; charset=utf-8
+2020-08-19 17:14:24.705 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:14:24.708 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:14:24.709 +08:00 [INF] Request finished in 4.9157ms 204 
+2020-08-19 17:14:24.713 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:14:24.713 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:14:24.715 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:14:24.717 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:14:24.718 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:14:24.721 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:14:24.725 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.8792ms.
+2020-08-19 17:14:24.730 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:14:24.732 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 12.7455ms
+2020-08-19 17:14:24.733 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:14:24.734 +08:00 [INF] Request finished in 21.3949ms 200 application/json; charset=utf-8
+2020-08-19 17:15:23.831 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount/:id  
+2020-08-19 17:15:23.839 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:15:23.840 +08:00 [INF] Request finished in 9.0805ms 204 
+2020-08-19 17:15:23.849 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/:id application/json;charset=utf-8 
+2020-08-19 17:15:23.851 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:15:23.866 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:15:24.167 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:15:24.168 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:15:24.169 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:15:24.174 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:15:24.175 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0396ms.
+2020-08-19 17:15:24.176 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:15:24.178 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 5.7833ms
+2020-08-19 17:15:24.179 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:15:24.181 +08:00 [INF] Request finished in 330.9462ms 200 application/json; charset=utf-8
+2020-08-19 17:16:37.990 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:16:37.993 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:16:37.995 +08:00 [INF] Request finished in 4.685ms 204 
+2020-08-19 17:16:38.018 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:16:38.020 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:16:38.021 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:16:38.023 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:16:38.024 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:16:38.025 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:16:38.029 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:16:38.032 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.5488ms.
+2020-08-19 17:16:38.034 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:16:38.035 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 8.0869ms
+2020-08-19 17:16:38.036 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:16:38.036 +08:00 [INF] Request finished in 18.0099ms 200 application/json; charset=utf-8
+2020-08-19 17:19:19.075 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?data=%7B%22id%22:1%7D  
+2020-08-19 17:19:19.079 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:19:19.097 +08:00 [INF] Request finished in 21.8294ms 204 
+2020-08-19 17:19:19.100 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?data=%7B%22id%22:1%7D  
+2020-08-19 17:19:19.101 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:19:19.103 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:19:19.106 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:19:19.107 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:19:19.108 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:19:19.111 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:19:19.114 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8668ms.
+2020-08-19 17:19:19.124 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:19:19.126 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 16.6808ms
+2020-08-19 17:19:19.127 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:19:19.128 +08:00 [INF] Request finished in 27.8215ms 200 application/json; charset=utf-8
+2020-08-19 17:19:29.841 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?data=%7B%22id%22:1%7D  
+2020-08-19 17:19:29.843 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:19:29.844 +08:00 [INF] Request finished in 3.4736ms 204 
+2020-08-19 17:19:29.847 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?data=%7B%22id%22:1%7D  
+2020-08-19 17:19:29.848 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:19:29.850 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:19:29.852 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:19:29.853 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:19:29.853 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:19:29.858 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:19:29.865 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.9921ms.
+2020-08-19 17:19:29.867 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:19:29.868 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 12.5322ms
+2020-08-19 17:19:29.869 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:19:29.870 +08:00 [INF] Request finished in 22.9881ms 200 application/json; charset=utf-8
+2020-08-19 17:20:57.813 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?id=%7B%22id%22:1%7D  
+2020-08-19 17:20:57.816 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:20:57.817 +08:00 [INF] Request finished in 3.7702ms 204 
+2020-08-19 17:20:57.844 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?id=%7B%22id%22:1%7D  
+2020-08-19 17:20:57.900 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:20:57.902 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:20:57.907 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:20:57.908 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:20:57.909 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:20:57.911 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:20:57.914 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6923ms.
+2020-08-19 17:20:57.914 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:20:57.915 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 5.4565ms
+2020-08-19 17:20:57.916 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:20:57.917 +08:00 [INF] Request finished in 72.2311ms 200 application/json; charset=utf-8
+2020-08-19 17:21:27.605 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?id=1  
+2020-08-19 17:21:27.607 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:21:27.608 +08:00 [INF] Request finished in 3.5563ms 204 
+2020-08-19 17:21:27.623 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?id=1  
+2020-08-19 17:21:27.624 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:21:27.626 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:21:27.628 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:21:27.629 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:21:27.630 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:21:27.632 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:21:27.634 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.7126ms.
+2020-08-19 17:21:27.636 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:21:27.637 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 6.5205ms
+2020-08-19 17:21:27.638 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:21:27.639 +08:00 [INF] Request finished in 16.116ms 200 application/json; charset=utf-8
+2020-08-19 17:21:59.105 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:21:59.172 +08:00 [INF] Request finished in 67.4194ms 200 text/html;charset=utf-8
+2020-08-19 17:21:59.995 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:21:59.996 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon-32x32.png  
+2020-08-19 17:22:00.406 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-08-19 17:22:00.409 +08:00 [INF] Request finished in 412.5273ms 200 image/png
+2020-08-19 17:22:00.648 +08:00 [INF] Request finished in 653.3126ms 200 application/json;charset=utf-8
+2020-08-19 17:22:04.880 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/apitokenmanage/id?id=11  
+2020-08-19 17:22:04.999 +08:00 [INF] Authorization failed.
+2020-08-19 17:22:05.106 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 17:22:05.107 +08:00 [INF] Request finished in 228.0223ms 401 
+2020-08-19 17:23:42.637 +08:00 [INF] Application is shutting down...
+2020-08-19 17:24:22.848 +08:00 [INF] 程序启动
+2020-08-19 17:24:23.289 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:24:23.557 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:24:23.558 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:24:23.558 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:24:23.559 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:24:25.082 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:24:26.537 +08:00 [INF] Request finished in 1458.9162ms 200 text/html;charset=utf-8
+2020-08-19 17:24:27.010 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:24:27.422 +08:00 [INF] Request finished in 411.526ms 200 application/json;charset=utf-8
+2020-08-19 17:24:32.715 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/apitokenmanage/id?id=111  
+2020-08-19 17:24:33.219 +08:00 [INF] Authorization failed.
+2020-08-19 17:24:33.223 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 17:24:33.255 +08:00 [INF] Request finished in 539.748ms 401 
+2020-08-19 17:24:47.067 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/111  
+2020-08-19 17:24:47.072 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:24:47.174 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:24:48.554 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:24:48.561 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.1764ms.
+2020-08-19 17:24:48.568 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:24:48.575 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 1395.9127ms
+2020-08-19 17:24:48.577 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:24:48.584 +08:00 [INF] Request finished in 1517.1844ms 200 application/json; charset=utf-8
+2020-08-19 17:24:59.870 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/111  
+2020-08-19 17:24:59.881 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:24:59.883 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:24:59.890 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:24:59.892 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0732ms.
+2020-08-19 17:24:59.894 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:24:59.895 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 9.8178ms
+2020-08-19 17:24:59.896 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:24:59.900 +08:00 [INF] Request finished in 30.3178ms 200 application/json; charset=utf-8
+2020-08-19 17:25:00.310 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2020-08-19 17:25:00.446 +08:00 [INF] Request finished in 135.6808ms 404 
+2020-08-19 17:25:05.587 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?111  
+2020-08-19 17:25:05.590 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:25:05.593 +08:00 [INF] Route matched with {action = "Get2", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get2() on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:25:05.595 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:25:06.257 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 659.5538ms.
+2020-08-19 17:25:06.260 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:25:06.265 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo) in 671.2809ms
+2020-08-19 17:25:06.269 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo)'
+2020-08-19 17:25:06.271 +08:00 [INF] Request finished in 684.4062ms 200 application/json; charset=utf-8
+2020-08-19 17:30:04.238 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount/[object Object]  
+2020-08-19 17:30:04.710 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:30:04.737 +08:00 [INF] Request finished in 532.1001ms 204 
+2020-08-19 17:30:04.741 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/[object Object]  
+2020-08-19 17:30:04.743 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:30:11.860 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:30:12.475 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:30:12.477 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:30:12.493 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:30:12.968 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:30:12.970 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0473ms.
+2020-08-19 17:30:12.971 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:30:13.005 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 509.8088ms
+2020-08-19 17:30:13.007 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:30:13.008 +08:00 [INF] Request finished in 8267.316ms 200 application/json; charset=utf-8
+2020-08-19 17:30:27.696 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount/1  
+2020-08-19 17:30:27.699 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:30:27.700 +08:00 [INF] Request finished in 3.7984ms 204 
+2020-08-19 17:30:27.795 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount/1  
+2020-08-19 17:30:27.796 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:30:27.799 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:30:27.808 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:30:27.809 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:30:27.814 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:30:27.829 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:30:27.830 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0738ms.
+2020-08-19 17:30:27.833 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:30:27.835 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 9.8537ms
+2020-08-19 17:30:27.837 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:30:27.841 +08:00 [INF] Request finished in 46.3577ms 200 application/json; charset=utf-8
+2020-08-19 17:35:57.440 +08:00 [INF] 程序启动
+2020-08-19 17:35:58.278 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:35:58.891 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:35:58.896 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:35:58.898 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:35:58.898 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:36:01.047 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:36:01.127 +08:00 [INF] Request finished in 83.6988ms 200 text/html;charset=utf-8
+2020-08-19 17:36:02.982 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:36:03.097 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Conflicting method/path combination "GET api/sysaccount" for actions - NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo),NetCoreBaseApiDemo.Controllers.SysAccountController.Get2 (NetCoreBaseApiDemo). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-19 17:36:04.580 +08:00 [INF] Request finished in 1597.9652ms 500 text/plain
+2020-08-19 17:36:39.104 +08:00 [INF] 程序启动
+2020-08-19 17:36:39.453 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:36:39.660 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:36:39.660 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:36:39.661 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:36:39.661 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:36:40.195 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:36:40.359 +08:00 [INF] Request finished in 166.923ms 200 text/html;charset=utf-8
+2020-08-19 17:36:40.576 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:36:40.918 +08:00 [INF] Request finished in 341.9649ms 200 application/json;charset=utf-8
+2020-08-19 17:36:47.808 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?id=111  
+2020-08-19 17:36:48.750 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:36:48.944 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:36:50.542 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:36:50.550 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6873ms.
+2020-08-19 17:36:50.555 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:36:50.583 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 1631.2978ms
+2020-08-19 17:36:50.584 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:36:50.631 +08:00 [INF] Request finished in 2823.4846ms 200 application/json; charset=utf-8
+2020-08-19 17:37:57.009 +08:00 [INF] 程序启动
+2020-08-19 17:37:57.261 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:37:57.429 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:37:57.430 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:37:57.430 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:37:57.430 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:37:58.731 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:37:58.853 +08:00 [INF] Request finished in 128.4848ms 200 text/html;charset=utf-8
+2020-08-19 17:37:59.038 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:37:59.205 +08:00 [INF] Request finished in 167.3138ms 200 application/json;charset=utf-8
+2020-08-19 17:38:58.377 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:38:58.839 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:38:59.000 +08:00 [INF] Request finished in 623.6673ms 204 
+2020-08-19 17:38:59.204 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 17:38:59.207 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:39:05.726 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:39:06.164 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:39:06.172 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:39:07.222 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:39:13.374 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/vue-admin-template/table/list  
+2020-08-19 17:39:13.376 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:39:13.378 +08:00 [INF] Request finished in 3.9837ms 204 
+2020-08-19 17:39:13.391 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:39:13.444 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/vue-admin-template/table/list  
+2020-08-19 17:39:13.446 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:39:13.447 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:39:13.449 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:39:13.488 +08:00 [INF] Request finished in 43.8739ms 404 
+2020-08-19 17:39:13.537 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 6309.7602ms
+2020-08-19 17:39:13.549 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:39:13.554 +08:00 [INF] Request finished in 14349.7057ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:39:20.969 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:39:20.977 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:39:20.978 +08:00 [INF] Request finished in 9.6567ms 204 
+2020-08-19 17:39:20.981 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 17:39:20.983 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:39:20.985 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:39:20.988 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:39:20.990 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:39:20.991 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:39:20.997 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:39:20.999 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 5.4488ms
+2020-08-19 17:39:21.000 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:39:21.001 +08:00 [INF] Request finished in 19.895ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:39:42.226 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:39:42.228 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:39:42.230 +08:00 [INF] Request finished in 4.0262ms 204 
+2020-08-19 17:39:42.232 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount  
+2020-08-19 17:39:42.233 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:39:42.235 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:39:42.237 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:39:42.238 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:39:42.239 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:39:42.243 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:39:42.244 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 3.525ms
+2020-08-19 17:39:42.245 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:39:42.246 +08:00 [INF] Request finished in 13.5412ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:40:41.202 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:40:41.204 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:41.205 +08:00 [INF] Request finished in 4.6654ms 204 
+2020-08-19 17:40:41.213 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:40:41.217 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:41.220 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-19 17:40:41.223 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-08-19 17:40:41.290 +08:00 [INF] Authorization failed.
+2020-08-19 17:40:41.325 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-19 17:40:41.326 +08:00 [INF] Request finished in 113.8331ms 401 
+2020-08-19 17:40:55.924 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage  
+2020-08-19 17:40:55.926 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:55.927 +08:00 [INF] Request finished in 2.9761ms 204 
+2020-08-19 17:40:55.931 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage application/json;charset=utf-8 
+2020-08-19 17:40:55.932 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:55.933 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:40:55.937 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 17:40:55.943 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:40:56.286 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 336.5696ms.
+2020-08-19 17:40:56.288 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:40:56.311 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 372.3572ms
+2020-08-19 17:40:56.312 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:40:56.314 +08:00 [INF] Request finished in 382.606ms 200 application/json; charset=utf-8
+2020-08-19 17:40:56.345 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:40:56.348 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:56.349 +08:00 [INF] Request finished in 4.1211ms 204 
+2020-08-19 17:40:56.352 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:40:56.353 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:56.367 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:40:56.380 +08:00 [INF] Authorization was successful.
+2020-08-19 17:40:56.380 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:40:56.409 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 17:40:56.411 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:40:56.412 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2694ms.
+2020-08-19 17:40:56.412 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:40:56.414 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 4.1439ms
+2020-08-19 17:40:56.415 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:40:56.415 +08:00 [INF] Request finished in 63.2601ms 200 application/json; charset=utf-8
+2020-08-19 17:40:56.679 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?data=%7B%22pageIndex%22:1,%22pageSize%22:10%7D  
+2020-08-19 17:40:56.681 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:56.683 +08:00 [INF] Request finished in 3.787ms 204 
+2020-08-19 17:40:56.702 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?data=%7B%22pageIndex%22:1,%22pageSize%22:10%7D  
+2020-08-19 17:40:56.704 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:40:56.705 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:40:56.705 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:40:56.706 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:40:56.734 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:40:56.736 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 26.7532ms
+2020-08-19 17:40:56.736 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:40:56.737 +08:00 [INF] Request finished in 35.2552ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:41:12.475 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:41:12.476 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:12.477 +08:00 [INF] Request finished in 2.3543ms 204 
+2020-08-19 17:41:12.481 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:41:12.483 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:12.484 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:41:12.485 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:12.486 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:41:12.716 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-08-19 17:41:12.717 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 230.3242ms
+2020-08-19 17:41:12.718 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:12.719 +08:00 [INF] Request finished in 237.3443ms 400 application/problem+json; charset=utf-8
+2020-08-19 17:41:18.204 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:41:18.208 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:18.210 +08:00 [INF] Request finished in 5.442ms 204 
+2020-08-19 17:41:18.254 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:41:18.255 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:18.256 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:41:18.257 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:18.258 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:41:18.261 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-08-19 17:41:18.262 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 3.1606ms
+2020-08-19 17:41:18.263 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:18.264 +08:00 [INF] Request finished in 9.8839ms 400 application/problem+json; charset=utf-8
+2020-08-19 17:41:43.319 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount  
+2020-08-19 17:41:43.320 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:43.321 +08:00 [INF] Request finished in 2.5331ms 204 
+2020-08-19 17:41:43.326 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount application/json;charset=utf-8 
+2020-08-19 17:41:43.328 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:43.329 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:41:43.329 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:43.330 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:41:43.333 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-08-19 17:41:43.333 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 2.9012ms
+2020-08-19 17:41:43.334 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:43.335 +08:00 [INF] Request finished in 9.5424ms 400 application/problem+json; charset=utf-8
+2020-08-19 17:41:58.464 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:41:58.466 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:58.467 +08:00 [INF] Request finished in 2.9893ms 204 
+2020-08-19 17:41:58.470 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:41:58.471 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:41:58.473 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:41:58.475 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:58.475 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:41:58.478 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:41:58.480 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 2.8039ms
+2020-08-19 17:41:58.480 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:41:58.481 +08:00 [INF] Request finished in 11.3245ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:42:10.221 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:42:10.224 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:42:10.225 +08:00 [INF] Request finished in 4.0076ms 204 
+2020-08-19 17:42:10.243 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:42:10.245 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:42:10.247 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:42:10.248 +08:00 [INF] Authorization was successful.
+2020-08-19 17:42:10.248 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:42:10.249 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 17:42:10.254 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:42:10.255 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0382ms.
+2020-08-19 17:42:10.257 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:42:10.258 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 4.725ms
+2020-08-19 17:42:10.259 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:42:10.259 +08:00 [INF] Request finished in 16.421ms 200 application/json; charset=utf-8
+2020-08-19 17:42:11.282 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:42:11.283 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:42:11.285 +08:00 [INF] Request finished in 2.7412ms 204 
+2020-08-19 17:42:11.297 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:42:11.298 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:42:11.299 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:42:11.300 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:42:11.300 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:42:11.303 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:42:11.337 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 35.7701ms
+2020-08-19 17:42:11.339 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:42:11.340 +08:00 [INF] Request finished in 42.8809ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:45:49.882 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:45:49.887 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:45:49.888 +08:00 [INF] Request finished in 5.6359ms 204 
+2020-08-19 17:45:49.914 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:45:49.916 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:45:49.919 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:45:49.919 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:45:49.920 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:45:49.929 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:45:49.930 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 7.9652ms
+2020-08-19 17:45:49.930 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:45:49.931 +08:00 [INF] Request finished in 17.2897ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:48:06.509 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:48:06.511 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:48:06.512 +08:00 [INF] Request finished in 3.4697ms 204 
+2020-08-19 17:48:06.837 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:48:06.838 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:48:06.839 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:48:06.841 +08:00 [INF] Authorization was successful.
+2020-08-19 17:48:06.842 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:06.842 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 17:48:06.846 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:48:06.847 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0322ms.
+2020-08-19 17:48:06.849 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:48:06.851 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 5.2496ms
+2020-08-19 17:48:06.852 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:06.866 +08:00 [INF] Request finished in 28.9254ms 200 application/json; charset=utf-8
+2020-08-19 17:48:07.142 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:48:07.444 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:48:07.445 +08:00 [INF] Request finished in 304.3723ms 204 
+2020-08-19 17:48:07.521 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:48:07.524 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:48:07.526 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:48:07.526 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:07.527 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:48:07.533 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:48:07.553 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 24.6528ms
+2020-08-19 17:48:07.554 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:07.556 +08:00 [INF] Request finished in 34.5465ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:48:12.119 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:48:12.123 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:48:12.124 +08:00 [INF] Request finished in 4.3506ms 204 
+2020-08-19 17:48:12.176 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/ApiTokenManage/id  
+2020-08-19 17:48:12.177 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:48:12.178 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:48:12.181 +08:00 [INF] Authorization was successful.
+2020-08-19 17:48:12.182 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:12.183 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-19 17:48:12.185 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-19 17:48:12.189 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0399ms.
+2020-08-19 17:48:12.209 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-19 17:48:12.212 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 28.1562ms
+2020-08-19 17:48:12.213 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:12.215 +08:00 [INF] Request finished in 39.0354ms 200 application/json; charset=utf-8
+2020-08-19 17:48:12.445 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:48:12.451 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:48:12.455 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:48:12.459 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:12.460 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:48:12.469 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:48:12.470 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 8.2517ms
+2020-08-19 17:48:12.472 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:48:12.473 +08:00 [INF] Request finished in 28.0726ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:48:36.758 +08:00 [INF] Application is shutting down...
+2020-08-19 17:50:42.370 +08:00 [INF] 程序启动
+2020-08-19 17:50:45.450 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 17:50:45.975 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-19 17:50:45.977 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 17:50:45.977 +08:00 [INF] Hosting environment: Development
+2020-08-19 17:50:45.978 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-19 17:50:48.678 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-19 17:50:49.980 +08:00 [WRN] Heartbeat took longer than ""00:00:01"" at ""2020-08-19T09:50:49.9669951+00:00"". This could be caused by thread pool starvation.
+2020-08-19 17:50:50.738 +08:00 [INF] Request finished in 2032.5678ms 200 text/html;charset=utf-8
+2020-08-19 17:50:51.800 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-19 17:50:53.228 +08:00 [INF] Request finished in 1427.8918ms 200 application/json;charset=utf-8
+2020-08-19 17:51:14.664 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:51:14.811 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:51:14.851 +08:00 [INF] Request finished in 186.8041ms 204 
+2020-08-19 17:51:14.867 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sysaccount?pageIndex=1&pageSize=10  
+2020-08-19 17:51:14.869 +08:00 [INF] CORS policy execution successful.
+2020-08-19 17:51:16.470 +08:00 [INF] Successfully validated the token.
+2020-08-19 17:51:16.494 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:51:16.594 +08:00 [INF] Route matched with {action = "Get", controller = "SysAccount"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(NetCoreBaseDemo.DBEntity.Base.RequestModel.SysAccountRequest) on controller NetCoreBaseApiDemo.Controllers.SysAccountController (NetCoreBaseApiDemo).
+2020-08-19 17:51:19.486 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-19 17:51:19.630 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo) in 3031.2954ms
+2020-08-19 17:51:19.638 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysAccountController.Get (NetCoreBaseApiDemo)'
+2020-08-19 17:51:19.645 +08:00 [INF] Request finished in 4778.6336ms 415 application/problem+json; charset=utf-8
+2020-08-19 17:51:30.672 +08:00 [INF] Application is shutting down...

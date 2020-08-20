@@ -8,7 +8,7 @@ namespace NetCoreBaseDemo.Service
 {
     public class BaseService<TKey, TEntity> where TEntity : class, new()
     {
-        protected  IBaseRepository<TKey, TEntity> _baseRepository;
+        protected IBaseRepository<TKey, TEntity> _baseRepository;
 
         public TEntity Get(TKey id)
         {
@@ -17,6 +17,10 @@ namespace NetCoreBaseDemo.Service
         public TKey Insert(TEntity entity)
         {
             return _baseRepository.Insert(entity);
+        }
+        public IEnumerable<TEntity> GetAll()
+        {
+            return _baseRepository.GetAll();
         }
     }
 }

@@ -20,7 +20,6 @@ namespace TheAcme.EntityModule.DbModels
         public string IdCard { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
-        public string SysDepartmentId { get; set; }
         public int UserStatus { get; set; }
         public bool IsDelete { get; set; }
         public DateTimeOffset CreateTime { get; set; }

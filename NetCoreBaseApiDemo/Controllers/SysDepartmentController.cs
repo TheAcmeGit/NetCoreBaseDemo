@@ -12,7 +12,7 @@ using TheAcme.EntityModule.DbModels;
 namespace NetCoreBaseApiDemo.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class SysDepartmentController : ControllerBase
     {
 
