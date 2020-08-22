@@ -19,9 +19,13 @@ namespace NetCoreBaseDemo.Dapper.Repository
         {
             return _dbBaseConnection.GetList<TEntity>();
         }
-        public IEnumerable<TEntity> GetListPaged(int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null)
+        public IEnumerable<TEntity> GetListPaged( int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null)
         {
             return _dbBaseConnection.GetListPaged<TEntity>(pageNumber, rowsPerPage, conditions, orderby, parameters);
+        }
+        public IEnumerable<TEntity> GetListPaged(out int totalCount, int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null)
+        {
+            return _dbBaseConnection.GetListPaged<TEntity>(out totalCount, pageNumber, rowsPerPage, conditions, orderby, parameters);
         }
         public TKey Insert(TEntity entity)
         {
@@ -40,6 +44,10 @@ namespace NetCoreBaseDemo.Dapper.Repository
         public int Update(TEntity entity)
         {
             return _dbBaseConnection.Update<TEntity>(entity);
+        }
+        public int GetTotalCount(string conditions, object parameters = null)
+        {
+            return 0;
         }
     }
 }

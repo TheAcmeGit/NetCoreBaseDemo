@@ -14,7 +14,7 @@ namespace TheAcme.EntityModule.DbModels
         public string Id { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string RealNmae { get; set; }
+        public string RealName { get; set; }
         public int Gender { get; set; }
         public int Age { get; set; }
         public string IdCard { get; set; }

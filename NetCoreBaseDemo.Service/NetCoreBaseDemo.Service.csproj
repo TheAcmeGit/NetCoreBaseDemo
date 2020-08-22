@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NetCoreBaseDemo.DTOEntity\NetCoreBaseDemo.DTOEntity.csproj" />
     <ProjectReference Include="..\NetCoreBaseDemo.IRepository\NetCoreBaseDemo.IRepository.csproj" />
     <ProjectReference Include="..\NetCoreBaseDemo.IService\NetCoreBaseDemo.IService.csproj" />
   </ItemGroup>

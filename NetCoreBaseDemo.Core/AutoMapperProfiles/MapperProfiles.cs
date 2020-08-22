@@ -11,6 +11,7 @@ namespace NetCoreBaseDemo.Core
         public MapperProfiles()
         {
             CreateMap<SysAccount, SysAccountDto>().ReverseMap();
+            CreateMap<SysAccountDto, SysAccount>().ReverseMap();
         }
     }
 }

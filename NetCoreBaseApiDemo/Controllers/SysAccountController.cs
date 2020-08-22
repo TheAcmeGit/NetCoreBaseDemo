@@ -33,60 +33,47 @@ namespace NetCoreBaseApiDemo.Controllers
             _redisManger = redisManger;
         }
         [HttpGet]
+        [Produces("application/json")]
         [ProducesResponseType(typeof(SysAccountDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Get(SysAccountRequest model)
+        public IActionResult Get(int pageIndex,int pageSize,string userName)
         {
             try
             {
-               
-                    return Ok(model);
+                string where = string.Empty;
+                where = string.IsNullOrWhiteSpace(userName) ? string.Empty : $"where userName like @userName";
+                var data = _service.GetListPaged(pageIndex, pageSize, where, " createtime desc",new { userName=$"{userName}%" });
+                return Ok(data);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
-        //[HttpGet(Name ="Get1")]
-        //[ProducesResponseType(typeof(SysAccountRequest), StatusCodes.Status200OK)]
-        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
-        //public IActionResult Get1(SysAccountRequest request)
-        //{
-        //    try
-        //    {
-        //        return Ok(request);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
-        //[HttpGet(Name ="Get2")]
-        //[ProducesResponseType(typeof(SysAccountDto), StatusCodes.Status200OK)]
-        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
-        //public IActionResult Get2()
-        //{
-        //    try
-        //    {
-        //        var data = _service.GetAll();
-        //        return Ok(data);
-               
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
-
         [HttpPost]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Post(SysAccount entity)
+        public IActionResult Post(SysAccountDto entity)
         {
             entity.Id = Guid.NewGuid().ToString();
+            entity.CreateTime = DateTimeOffset.Now;
             return Ok(_service.Insert(entity));
         }
-      
+        [HttpPut]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult put(SysAccountDto entity)
+        {
+            return Ok(_service.Update(entity));
+        }
+
+        [HttpDelete]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Delete(string id)
+        {
+            return Ok(_service.Delete(id));
+        }
+
     }
 }

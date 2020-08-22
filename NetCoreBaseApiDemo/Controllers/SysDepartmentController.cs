@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NetCoreBaseDemo.Core.IServices;
+using NetCoreBaseDemo.DTOEntity;
 using NetCoreBaseDemo.IService;
 using TheAcme.EntityModule.DbModels;
 
@@ -52,7 +53,7 @@ namespace NetCoreBaseApiDemo.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Post(SysDepartment entity)
+        public IActionResult Post(SysDepartmentDto entity)
         {
             return Ok(_service.Insert(entity));
         }

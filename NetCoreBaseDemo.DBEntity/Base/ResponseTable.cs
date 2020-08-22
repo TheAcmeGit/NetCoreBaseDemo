@@ -7,7 +7,7 @@ namespace NetCoreBaseDemo.DBEntity.Base
 {
     public class ResponseTable<T>
     {
-        public IEnumerable<T> TabelData { get; set; }
+        public IEnumerable<T> TableData { get; set; }
         public int Total { get; set; }
     }
 }

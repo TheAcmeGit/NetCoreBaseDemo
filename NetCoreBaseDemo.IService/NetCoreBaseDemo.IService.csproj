@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NetCoreBaseDemo.DBEntity\NetCoreBaseDemo.DBEntity.csproj" />
+    <ProjectReference Include="..\NetCoreBaseDemo.DTOEntity\NetCoreBaseDemo.DTOEntity.csproj" />
   </ItemGroup>
 
 </Project>

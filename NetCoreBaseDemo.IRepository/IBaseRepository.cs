@@ -27,6 +27,7 @@ namespace NetCoreBaseDemo.IRepository
         /// <param name="parameters">参数</param>
         /// <returns></returns>
         IEnumerable<TEntity> GetListPaged(int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null);
+        IEnumerable<TEntity> GetListPaged(out int totalCount, int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null);
         /// <summary>
         /// 插入实体
         /// </summary>
@@ -51,5 +52,7 @@ namespace NetCoreBaseDemo.IRepository
         /// <param name="entity"></param>
         /// <returns></returns>
         int Update(TEntity entity);
+
+        int GetTotalCount(string conditions, object parameters = null);
     }
 }

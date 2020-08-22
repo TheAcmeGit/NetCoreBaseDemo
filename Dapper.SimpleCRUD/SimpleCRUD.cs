@@ -310,6 +310,64 @@ namespace Dapper
         }
 
         /// <summary>
+        /// 加入返回条数
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="connection"></param>
+        /// <param name="pageNumber"></param>
+        /// <param name="rowsPerPage"></param>
+        /// <param name="conditions"></param>
+        /// <param name="orderby"></param>
+        /// <param name="parameters"></param>
+        /// <param name="transaction"></param>
+        /// <param name="commandTimeout"></param>
+        /// <returns></returns>
+        public static IEnumerable<T> GetListPaged<T>(this IDbConnection connection,out int totalCount, int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null, IDbTransaction transaction = null, int? commandTimeout = null)
+        {
+            if (string.IsNullOrEmpty(_getPagedListSql))
+                throw new Exception("GetListPage is not supported with the current SQL Dialect");
+
+            if (pageNumber < 1)
+                throw new Exception("Page must be greater than 0");
+
+            var currenttype = typeof(T);
+            var idProps = GetIdProperties(currenttype).ToList();
+            if (!idProps.Any())
+                throw new ArgumentException("Entity must have at least one [Key] property");
+
+            var name = GetTableName(currenttype);
+            var sb = new StringBuilder();
+            var query = _getPagedListSql;
+            if (string.IsNullOrEmpty(orderby))
+            {
+                orderby = GetColumnName(idProps.First());
+            }
+
+            //create a new empty instance of the type to get the base properties
+            BuildSelect(sb, GetScaffoldableProperties<T>().ToArray());
+            query = query.Replace("{SelectColumns}", sb.ToString());
+            query = query.Replace("{TableName}", name);
+            query = query.Replace("{PageNumber}", pageNumber.ToString());
+            query = query.Replace("{RowsPerPage}", rowsPerPage.ToString());
+            query = query.Replace("{OrderBy}", orderby);
+            query = query.Replace("{WhereClause}", conditions);
+            query = query.Replace("{Offset}", ((pageNumber - 1) * rowsPerPage).ToString());
+
+            if (Debugger.IsAttached)
+                Trace.WriteLine(String.Format("GetListPaged<{0}>: {1}", currenttype, query));
+
+
+            var multi = connection.QueryMultiple($"{query}; select count(*) from {name}  {conditions}", parameters, transaction);
+            
+            var data = multi.Read<T>().ToArray();
+            totalCount = multi.Read<int>().First();
+
+            return data;
+
+            //  return connection.Query<T>(query, parameters, transaction, true, commandTimeout);
+        }
+
+        /// <summary>
         /// <para>Inserts a row into the database</para>
         /// <para>By default inserts into the table matching the class name</para>
         /// <para>-Table name can be overridden by adding an attribute on your class [Table("YourTableName")]</para>
