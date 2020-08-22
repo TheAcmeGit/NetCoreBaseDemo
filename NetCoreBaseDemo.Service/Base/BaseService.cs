@@ -26,11 +26,13 @@ namespace NetCoreBaseDemo.Service
         {
             return _baseRepository.GetAll();
         }
-        public ResponseTable<TEntity> GetListPaged(int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null)
+        public ResponseTable<TEntityDto> GetListPaged(int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null)
         {
             int total = 0;
-            ResponseTable<TEntity> table = new ResponseTable<TEntity>();
-            table.TableData = _baseRepository.GetListPaged(out total, pageNumber, rowsPerPage, conditions, orderby, parameters);
+            ResponseTable<TEntityDto> table = new ResponseTable<TEntityDto>();
+           var pageData= _baseRepository.GetListPaged(out total, pageNumber, rowsPerPage, conditions, orderby, parameters);
+
+            table.TableData= _mapper.Map<IEnumerable<TEntity>,IEnumerable<TEntityDto>>(pageData);
             table.Total = total;
             return table;
         }

@@ -1,4 +1,5 @@
 ﻿using Dapper.Contrib.Extensions;
+using NetCoreBaseDemo.DBEntity.Base.EnumTypes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,7 +18,7 @@ namespace TheAcme.EntityModule.DbModels
         public string DepartmentName { get; set; }
         [Required(ErrorMessage ="必须")]
         public string ParentId { get; set; }
-        public int DepartmentStatus { get; set; }
+        public DepartmentStatusTypes DepartmentStatus { get; set; }
         public DateTimeOffset Createtime { get; set; }
     }
 }

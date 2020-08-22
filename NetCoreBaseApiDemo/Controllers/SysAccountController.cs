@@ -36,13 +36,20 @@ namespace NetCoreBaseApiDemo.Controllers
         [Produces("application/json")]
         [ProducesResponseType(typeof(SysAccountDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Get(int pageIndex,int pageSize,string userName)
+        public IActionResult Get(int pageIndex, int pageSize, string userName, string gender)
         {
             try
             {
-                string where = string.Empty;
-                where = string.IsNullOrWhiteSpace(userName) ? string.Empty : $"where userName like @userName";
-                var data = _service.GetListPaged(pageIndex, pageSize, where, " createtime desc",new { userName=$"{userName}%" });
+                string where = "where 1=1 ";
+                if (!string.IsNullOrWhiteSpace(userName))
+                {
+                    where += " and userName like @userName";
+                }
+                if (!string.IsNullOrWhiteSpace(gender))
+                {
+                    where += " and gender=@gender";
+                }
+                var data = _service.GetListPaged(pageIndex, pageSize, where, " createtime desc",new { userName=$"{userName}%" ,gender=gender});
                 return Ok(data);
             }
             catch (Exception ex)

@@ -12,6 +12,6 @@ namespace NetCoreBaseDemo.IService
         TKey Insert(SysAccountDto entity);
         int Update(SysAccountDto entity);
         int Delete(TKey id);
-        ResponseTable<TEntity> GetListPaged(int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null);
+        ResponseTable<SysAccountDto> GetListPaged(int pageNumber, int rowsPerPage, string conditions, string orderby, object parameters = null);
     }
 }
