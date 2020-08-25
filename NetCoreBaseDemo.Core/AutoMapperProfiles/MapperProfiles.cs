@@ -14,6 +14,8 @@ namespace NetCoreBaseDemo.Core
             CreateMap<SysAccountDto, SysAccount>().ReverseMap();
             CreateMap<SysDepartment, SysDepartmentDto>().ReverseMap();
             CreateMap<SysDepartmentDto, SysDepartment>().ReverseMap();
+            CreateMap<SysNavMenuDto, SysNavMenu>().ReverseMap();
+            CreateMap<SysNavMenu, SysNavMenuDto>().ReverseMap();
         }
     }
 }

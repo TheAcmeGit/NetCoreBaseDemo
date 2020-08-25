@@ -72,6 +72,12 @@ export const constantRoutes = [
         name: 'sysDepartment',
         component: () => import('@/views/sysDepartment/index'),
         meta: { title: '部门管理', icon: 'table' }
+      },
+      {
+        path: 'sysNavMenu',
+        name: 'sysNavMenu',
+        component: () => import('@/views/sysNavMenu/index'),
+        meta: { title: '菜单管理', icon: 'table' }
       }
     ]
   },

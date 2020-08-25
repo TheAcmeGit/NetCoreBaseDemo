@@ -2,49 +2,51 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AutoMapper.Internal;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NetCoreBaseDemo.Core.IServices;
-using NetCoreBaseDemo.DBEntity.Base.EnumTypes;
 using NetCoreBaseDemo.DTOEntity;
 using NetCoreBaseDemo.IService;
-using TheAcme.EntityModule.DbModels;
+using AutoMapper.Internal;
+
 
 namespace NetCoreBaseApiDemo.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SysDepartmentController : ControllerBase
+    public class SysNavMenuController : ControllerBase
     {
 
-
-        private readonly ILogger<SysAccountController> _logger;
-        private readonly ISysDepartmentService _service;
+        private readonly ILogger<SysNavMenuController> _logger;
+        private readonly ISysNavMenuService _service;
         private readonly IRedisMangerService _redisManger;
 
-        public SysDepartmentController(ILogger<SysAccountController> logger, ISysDepartmentService service, IRedisMangerService redisManger)
+        public SysNavMenuController(ILogger<SysNavMenuController> logger, ISysNavMenuService service, IRedisMangerService redisManger)
         {
             _logger = logger;
             _service = service;
             _redisManger = redisManger;
         }
         [HttpGet]
-        public IActionResult Get(int pageIndex, int pageSize, string departmentName, string departmentStatus)
+        public IActionResult Get()
         {
             try
             {
-                string where = "where 1=1 ";
-                if (!string.IsNullOrWhiteSpace(departmentName))
-                {
-                    where += " and departmentName like @departmentName";
-                }
-                if (!string.IsNullOrWhiteSpace(departmentStatus))
-                {
-                    where += " and departmentStatus=@departmentStatus";
-                }
-                var data = _service.GetListPaged(pageIndex, pageSize, where, " createtime desc", new { departmentName = $"{departmentName}%", departmentStatus = departmentStatus });
+                //string where = "where 1=1 ";
+                //if (!string.IsNullOrWhiteSpace(departmentName))
+                //{
+                //    where += " and departmentName like @departmentName";
+                //}
+                //if (!string.IsNullOrWhiteSpace(departmentStatus))
+                //{
+                //    where += " and departmentStatus=@departmentStatus";
+                //}
+                //var data = _service.GetListPaged(pageIndex, pageSize, where, " createtime desc", new { departmentName = $"{departmentName}%", departmentStatus = departmentStatus });
+
+
+                var data = _service.GetNavMenuTreeInfo("0");
+                
                 return Ok(data);
             }
             catch (Exception ex)
@@ -61,9 +63,10 @@ namespace NetCoreBaseApiDemo.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Post(SysDepartmentDto entity)
+        public IActionResult Post(SysNavMenuDto entity)
         {
             entity.Id = Guid.NewGuid().ToString();
+            entity.CreateTime = DateTimeOffset.Now;
             return Ok(_service.Insert(entity));
         }
         /// <summary>
@@ -74,7 +77,7 @@ namespace NetCoreBaseApiDemo.Controllers
         [HttpPut]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Put(SysDepartmentDto entity)
+        public IActionResult Put(SysNavMenuDto entity)
         {
             entity.CreateTime = DateTimeOffset.Now;
             return Ok(_service.Update(entity));
@@ -96,17 +99,36 @@ namespace NetCoreBaseApiDemo.Controllers
         /// </summary>
         /// <param name="count">条数</param>
         /// <returns></returns>
-        [HttpPost("{count}",Name = "LoadData")]
-        public IActionResult LoadData(int count)
+        [HttpPost("{count}", Name = "PermissionLoadData")]
+        public IActionResult PermissionLoadData(int count)
         {
-            Enumerable.Range(1, count).Select(item => new SysDepartmentDto
+            Enumerable.Range(1, count).Select(item => new SysNavMenuDto
             {
                 Id = Guid.NewGuid().ToString(),
-                //Createtime = DateTimeOffset.Now,
-                DepartmentName = $"部门{item}",
-                //DepartmentStatus = DepartmentStatusTypes.可用,
+                Name = $"{item}",
+                IsLeaf = false,
+        
+
             }).ForAll(item =>
             {
+                var mod1 = new SysNavMenuDto
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = $"{item.Name}-1",
+                    ParentId = item.Id,
+                    IsLeaf = true,
+              
+
+                };
+                var mod2 = new SysNavMenuDto
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = $"{item.Name}-2",
+                    ParentId = item.Id,
+                    IsLeaf = true,
+                };
+                _service.Insert(mod1);
+                _service.Insert(mod2);
                 _service.Insert(item);
             });
             return Ok("完成");

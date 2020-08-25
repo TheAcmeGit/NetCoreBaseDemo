@@ -6,8 +6,8 @@ using System.Text;
 
 namespace TheAcme.EntityModule.DbModels
 {
-    [Table("SysPermissions")]
-    public class SysPermission
+    [Table("SysNavMenus")]
+    public class SysNavMenu
     {
         [Required]
         [ExplicitKey]
@@ -16,7 +16,7 @@ namespace TheAcme.EntityModule.DbModels
         public string Method { get; set; }
         public string UrlLink { get; set; }
         public string ParentId { get; set; }
-        public bool IsIeaf { get; set; }
+        public bool IsLeaf { get; set; }
         public bool IsButton { get; set; }
         public int Status { get; set; }
         public DateTimeOffset CreateTime { get; set; }

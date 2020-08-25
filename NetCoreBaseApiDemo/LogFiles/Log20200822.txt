@@ -6253,3 +6253,32 @@ Createtime
 2020-08-22 16:40:25.275 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.SysDepartmentController.Get (NetCoreBaseApiDemo)'
 2020-08-22 16:40:25.277 +08:00 [INF] Request finished in 314.9731ms 200 application/json; charset=utf-8
 2020-08-22 16:44:51.996 +08:00 [INF] Application is shutting down...
+2020-08-22 17:01:02.693 +08:00 [INF] 程序启动
+2020-08-22 17:01:03.005 +08:00 [INF] User profile is available. Using 'C:\Users\KO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-22 17:01:03.185 +08:00 [INF] Now listening on: http://localhost:5000
+2020-08-22 17:01:03.185 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-22 17:01:03.186 +08:00 [INF] Hosting environment: Development
+2020-08-22 17:01:03.186 +08:00 [INF] Content root path: F:\TestDemo\NetCoreBaseDemo\NetCoreBaseApiDemo
+2020-08-22 17:01:03.781 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2020-08-22 17:01:03.952 +08:00 [INF] Request finished in 187.166ms 200 text/html;charset=utf-8
+2020-08-22 17:01:04.161 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-08-22 17:01:04.341 +08:00 [INF] Request finished in 180.1331ms 200 application/json;charset=utf-8
+2020-08-22 17:01:10.460 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/apitokenmanage  
+2020-08-22 17:01:10.512 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-22 17:01:10.543 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-22 17:01:10.554 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-22 17:01:10.664 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 101.6805ms.
+2020-08-22 17:01:10.670 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-22 17:01:10.737 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 182.6326ms
+2020-08-22 17:01:10.739 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-22 17:01:10.752 +08:00 [INF] Request finished in 292.7525ms 200 application/json; charset=utf-8
+2020-08-22 17:01:25.530 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/apitokenmanage  
+2020-08-22 17:01:25.534 +08:00 [INF] Executing endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-22 17:01:25.535 +08:00 [INF] Route matched with {action = "Get", controller = "ApiTokenManage"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller NetCoreBaseApiDemo.Controllers.ApiTokenManageController (NetCoreBaseApiDemo).
+2020-08-22 17:01:25.536 +08:00 [INF] Executing action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) - Validation state: "Valid"
+2020-08-22 17:01:25.538 +08:00 [INF] Executed action method NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5801ms.
+2020-08-22 17:01:25.539 +08:00 [INF] Executing ObjectResult, writing value of type 'NetCoreBaseDemo.Core.Models.BaseResutlData'.
+2020-08-22 17:01:25.541 +08:00 [INF] Executed action NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo) in 4.9234ms
+2020-08-22 17:01:25.542 +08:00 [INF] Executed endpoint 'NetCoreBaseApiDemo.Controllers.ApiTokenManageController.Get (NetCoreBaseApiDemo)'
+2020-08-22 17:01:25.543 +08:00 [INF] Request finished in 13.4012ms 200 application/json; charset=utf-8
+2020-08-22 17:04:23.668 +08:00 [INF] Application is shutting down...

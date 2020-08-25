@@ -11,6 +11,6 @@ namespace NetCoreBaseDemo.DTOEntity
         public string DepartmentName { get; set; }
         public string ParentId { get; set; }
         public DepartmentStatusTypes DepartmentStatus { get; set; }
-        public DateTimeOffset Createtime { get; set; }
+        public DateTimeOffset CreateTime { get; set; }
     }
 }
